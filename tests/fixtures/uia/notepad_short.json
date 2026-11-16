@@ -1,0 +1,1037 @@
+{
+ "handle": 656866,
+ "title": "nota.txt: Bloc de notas",
+ "class_name": "Notepad",
+ "process_id": 10508,
+ "process_name": "Notepad.exe",
+ "captured_at": "2026-11-11T07:20:15.722365Z",
+ "elapsed_s": 0.05331389999992098,
+ "node_count": 50,
+ "max_depth_reached": 6,
+ "partial": false,
+ "partial_reasons": [],
+ "error_count": 0,
+ "root": {
+  "control_type": "Window",
+  "name": "nota.txt: Bloc de notas",
+  "automation_id": "",
+  "class_name": "Notepad",
+  "rect": {
+   "left": 26,
+   "top": 26,
+   "right": 1466,
+   "bottom": 779
+  },
+  "enabled": true,
+  "offscreen": false,
+  "is_password": false,
+  "patterns": [
+   "Window",
+   "Transform"
+  ],
+  "path": "Window[0]",
+  "children": [
+   {
+    "control_type": "Pane",
+    "name": "",
+    "automation_id": "",
+    "class_name": "NotepadTextBox",
+    "rect": {
+     "left": 32,
+     "top": 101,
+     "right": 1460,
+     "bottom": 741
+    },
+    "enabled": true,
+    "offscreen": false,
+    "is_password": false,
+    "patterns": [],
+    "path": "Window[0]/Pane[0]",
+    "children": [
+     {
+      "control_type": "Document",
+      "name": "Editor de texto",
+      "automation_id": "",
+      "class_name": "RichEditD2DPT",
+      "rect": {
+       "left": 32,
+       "top": 101,
+       "right": 1460,
+       "bottom": 741
+      },
+      "enabled": true,
+      "offscreen": false,
+      "is_password": false,
+      "patterns": [
+       "Value",
+       "Scroll",
+       "Text"
+      ],
+      "path": "Window[0]/Pane[0]/Document[0]",
+      "children": []
+     }
+    ]
+   },
+   {
+    "control_type": "Pane",
+    "name": "",
+    "automation_id": "",
+    "class_name": "Microsoft.UI.Content.DesktopChildSiteBridge",
+    "rect": {
+     "left": 72,
+     "top": 36,
+     "right": 839,
+     "bottom": 68
+    },
+    "enabled": true,
+    "offscreen": false,
+    "is_password": false,
+    "patterns": [],
+    "path": "Window[0]/Pane[1]",
+    "children": [
+     {
+      "control_type": "Pane",
+      "name": "",
+      "automation_id": "",
+      "class_name": "InputSiteWindowClass",
+      "rect": {
+       "left": 72,
+       "top": 36,
+       "right": 839,
+       "bottom": 68
+      },
+      "enabled": true,
+      "offscreen": false,
+      "is_password": false,
+      "patterns": [],
+      "path": "Window[0]/Pane[1]/Pane[0]",
+      "children": [
+       {
+        "control_type": "Tab",
+        "name": "",
+        "automation_id": "Tabs",
+        "class_name": "Microsoft.UI.Xaml.Controls.TabView",
+        "rect": {
+         "left": 72,
+         "top": 36,
+         "right": 839,
+         "bottom": 68
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "Selection",
+         "ScrollItem"
+        ],
+        "path": "Window[0]/Pane[1]/Pane[0]/Tab[0]",
+        "children": [
+         {
+          "control_type": "List",
+          "name": "",
+          "automation_id": "TabListView",
+          "class_name": "ListView",
+          "rect": {
+           "left": 74,
+           "top": 36,
+           "right": 802,
+           "bottom": 68
+          },
+          "enabled": true,
+          "offscreen": false,
+          "is_password": false,
+          "patterns": [
+           "Selection",
+           "Scroll",
+           "ScrollItem"
+          ],
+          "path": "Window[0]/Pane[1]/Pane[0]/Tab[0]/List[0]",
+          "children": [
+           {
+            "control_type": "TabItem",
+            "name": "archivo_ajeno_1.txt. No modificado.",
+            "automation_id": "",
+            "class_name": "ListViewItem",
+            "rect": {
+             "left": 80,
+             "top": 36,
+             "right": 319,
+             "bottom": 68
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "SelectionItem",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Pane[1]/Pane[0]/Tab[0]/List[0]/TabItem[0]",
+            "children": [
+             {
+              "control_type": "Text",
+              "name": "archivo_ajeno_1.txt",
+              "automation_id": "",
+              "class_name": "TextBlock",
+              "rect": {
+               "left": 89,
+               "top": 44,
+               "right": 182,
+               "bottom": 59
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "ScrollItem",
+               "Text"
+              ],
+              "path": "Window[0]/Pane[1]/Pane[0]/Tab[0]/List[0]/TabItem[0]/Text[0]",
+              "children": []
+             }
+            ]
+           },
+           {
+            "control_type": "TabItem",
+            "name": "archivo_ajeno_2.txt. No modificado.",
+            "automation_id": "",
+            "class_name": "ListViewItem",
+            "rect": {
+             "left": 319,
+             "top": 36,
+             "right": 558,
+             "bottom": 68
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "SelectionItem",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Pane[1]/Pane[0]/Tab[0]/List[0]/TabItem[1]",
+            "children": [
+             {
+              "control_type": "Text",
+              "name": "archivo_ajeno_2.txt",
+              "automation_id": "",
+              "class_name": "TextBlock",
+              "rect": {
+               "left": 328,
+               "top": 44,
+               "right": 421,
+               "bottom": 59
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "ScrollItem",
+               "Text"
+              ],
+              "path": "Window[0]/Pane[1]/Pane[0]/Tab[0]/List[0]/TabItem[1]/Text[0]",
+              "children": []
+             }
+            ]
+           },
+           {
+            "control_type": "TabItem",
+            "name": "nota.txt. No modificado.",
+            "automation_id": "",
+            "class_name": "ListViewItem",
+            "rect": {
+             "left": 554,
+             "top": 36,
+             "right": 801,
+             "bottom": 68
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "SelectionItem",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Pane[1]/Pane[0]/Tab[0]/List[0]/TabItem[2]",
+            "children": [
+             {
+              "control_type": "Text",
+              "name": "nota.txt",
+              "automation_id": "",
+              "class_name": "TextBlock",
+              "rect": {
+               "left": 567,
+               "top": 44,
+               "right": 610,
+               "bottom": 59
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "ScrollItem",
+               "Text"
+              ],
+              "path": "Window[0]/Pane[1]/Pane[0]/Tab[0]/List[0]/TabItem[2]/Text[0]",
+              "children": []
+             },
+             {
+              "control_type": "Button",
+              "name": "Cerrar pestaña",
+              "automation_id": "CloseButton",
+              "class_name": "Button",
+              "rect": {
+               "left": 761,
+               "top": 40,
+               "right": 793,
+               "bottom": 64
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "Invoke",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Pane[1]/Pane[0]/Tab[0]/List[0]/TabItem[2]/Button[0]",
+              "children": []
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "control_type": "Button",
+          "name": "Agregar nueva pestaña",
+          "automation_id": "AddButton",
+          "class_name": "Button",
+          "rect": {
+           "left": 805,
+           "top": 42,
+           "right": 837,
+           "bottom": 66
+          },
+          "enabled": true,
+          "offscreen": false,
+          "is_password": false,
+          "patterns": [
+           "Invoke",
+           "ScrollItem"
+          ],
+          "path": "Window[0]/Pane[1]/Pane[0]/Tab[0]/Button[0]",
+          "children": []
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "control_type": "Pane",
+    "name": "",
+    "automation_id": "",
+    "class_name": "Microsoft.UI.Content.DesktopChildSiteBridge",
+    "rect": {
+     "left": 32,
+     "top": 68,
+     "right": 1460,
+     "bottom": 101
+    },
+    "enabled": true,
+    "offscreen": false,
+    "is_password": false,
+    "patterns": [],
+    "path": "Window[0]/Pane[2]",
+    "children": [
+     {
+      "control_type": "Pane",
+      "name": "",
+      "automation_id": "",
+      "class_name": "InputSiteWindowClass",
+      "rect": {
+       "left": 32,
+       "top": 68,
+       "right": 1460,
+       "bottom": 101
+      },
+      "enabled": true,
+      "offscreen": false,
+      "is_password": false,
+      "patterns": [],
+      "path": "Window[0]/Pane[2]/Pane[0]",
+      "children": [
+       {
+        "control_type": "MenuBar",
+        "name": "",
+        "automation_id": "MenuBar",
+        "class_name": "",
+        "rect": {
+         "left": 32,
+         "top": 68,
+         "right": 219,
+         "bottom": 100
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "ScrollItem"
+        ],
+        "path": "Window[0]/Pane[2]/Pane[0]/MenuBar[0]",
+        "children": [
+         {
+          "control_type": "MenuItem",
+          "name": "Archivo",
+          "automation_id": "File",
+          "class_name": "Microsoft.UI.Xaml.Controls.MenuBarItem",
+          "rect": {
+           "left": 36,
+           "top": 68,
+           "right": 103,
+           "bottom": 100
+          },
+          "enabled": true,
+          "offscreen": false,
+          "is_password": false,
+          "patterns": [
+           "Invoke",
+           "ExpandCollapse",
+           "ScrollItem"
+          ],
+          "path": "Window[0]/Pane[2]/Pane[0]/MenuBar[0]/MenuItem[0]",
+          "children": []
+         },
+         {
+          "control_type": "MenuItem",
+          "name": "Editar",
+          "automation_id": "Edit",
+          "class_name": "Microsoft.UI.Xaml.Controls.MenuBarItem",
+          "rect": {
+           "left": 111,
+           "top": 68,
+           "right": 167,
+           "bottom": 100
+          },
+          "enabled": true,
+          "offscreen": false,
+          "is_password": false,
+          "patterns": [
+           "Invoke",
+           "ExpandCollapse",
+           "ScrollItem"
+          ],
+          "path": "Window[0]/Pane[2]/Pane[0]/MenuBar[0]/MenuItem[1]",
+          "children": []
+         },
+         {
+          "control_type": "MenuItem",
+          "name": "Ver",
+          "automation_id": "View",
+          "class_name": "Microsoft.UI.Xaml.Controls.MenuBarItem",
+          "rect": {
+           "left": 175,
+           "top": 68,
+           "right": 215,
+           "bottom": 100
+          },
+          "enabled": true,
+          "offscreen": false,
+          "is_password": false,
+          "patterns": [
+           "Invoke",
+           "ExpandCollapse",
+           "ScrollItem"
+          ],
+          "path": "Window[0]/Pane[2]/Pane[0]/MenuBar[0]/MenuItem[2]",
+          "children": []
+         }
+        ]
+       },
+       {
+        "control_type": "Button",
+        "name": "Títulos",
+        "automation_id": "",
+        "class_name": "Microsoft.UI.Xaml.Controls.DropDownButton",
+        "rect": {
+         "left": 582,
+         "top": 68,
+         "right": 638,
+         "bottom": 100
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "Invoke",
+         "ExpandCollapse",
+         "ScrollItem"
+        ],
+        "path": "Window[0]/Pane[2]/Pane[0]/Button[0]",
+        "children": []
+       },
+       {
+        "control_type": "Button",
+        "name": "Listas",
+        "automation_id": "",
+        "class_name": "Microsoft.UI.Xaml.Controls.DropDownButton",
+        "rect": {
+         "left": 638,
+         "top": 68,
+         "right": 694,
+         "bottom": 100
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "Invoke",
+         "ExpandCollapse",
+         "ScrollItem"
+        ],
+        "path": "Window[0]/Pane[2]/Pane[0]/Button[1]",
+        "children": []
+       },
+       {
+        "control_type": "Button",
+        "name": "Negrita (Ctrl+N)",
+        "automation_id": "",
+        "class_name": "ToggleButton",
+        "rect": {
+         "left": 694,
+         "top": 68,
+         "right": 726,
+         "bottom": 100
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "Toggle",
+         "ScrollItem"
+        ],
+        "path": "Window[0]/Pane[2]/Pane[0]/Button[2]",
+        "children": []
+       },
+       {
+        "control_type": "Button",
+        "name": "Cursiva (Ctrl+I)",
+        "automation_id": "",
+        "class_name": "ToggleButton",
+        "rect": {
+         "left": 726,
+         "top": 68,
+         "right": 758,
+         "bottom": 100
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "Toggle",
+         "ScrollItem"
+        ],
+        "path": "Window[0]/Pane[2]/Pane[0]/Button[3]",
+        "children": []
+       },
+       {
+        "control_type": "Button",
+        "name": "Tachado (Ctrl+Mayús+X)",
+        "automation_id": "",
+        "class_name": "ToggleButton",
+        "rect": {
+         "left": 758,
+         "top": 68,
+         "right": 790,
+         "bottom": 100
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "Toggle",
+         "ScrollItem"
+        ],
+        "path": "Window[0]/Pane[2]/Pane[0]/Button[4]",
+        "children": []
+       },
+       {
+        "control_type": "Button",
+        "name": "Vincular (Ctrl+K)",
+        "automation_id": "",
+        "class_name": "ToggleButton",
+        "rect": {
+         "left": 790,
+         "top": 68,
+         "right": 822,
+         "bottom": 100
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "Toggle",
+         "ScrollItem"
+        ],
+        "path": "Window[0]/Pane[2]/Pane[0]/Button[5]",
+        "children": []
+       },
+       {
+        "control_type": "Button",
+        "name": "Tabla",
+        "automation_id": "",
+        "class_name": "Microsoft.UI.Xaml.Controls.DropDownButton",
+        "rect": {
+         "left": 822,
+         "top": 68,
+         "right": 878,
+         "bottom": 100
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "Invoke",
+         "ExpandCollapse",
+         "ScrollItem"
+        ],
+        "path": "Window[0]/Pane[2]/Pane[0]/Button[6]",
+        "children": []
+       },
+       {
+        "control_type": "Button",
+        "name": "Borrar formato (Ctrl+Espacio)",
+        "automation_id": "",
+        "class_name": "ToggleButton",
+        "rect": {
+         "left": 878,
+         "top": 68,
+         "right": 910,
+         "bottom": 100
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "Toggle",
+         "ScrollItem"
+        ],
+        "path": "Window[0]/Pane[2]/Pane[0]/Button[7]",
+        "children": []
+       },
+       {
+        "control_type": "Button",
+        "name": "Herramientas de escritura",
+        "automation_id": "RewriteDropDownButton",
+        "class_name": "Microsoft.UI.Xaml.Controls.DropDownButton",
+        "rect": {
+         "left": 1294,
+         "top": 68,
+         "right": 1350,
+         "bottom": 100
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "Invoke",
+         "ExpandCollapse",
+         "ScrollItem"
+        ],
+        "path": "Window[0]/Pane[2]/Pane[0]/Button[8]",
+        "children": []
+       },
+       {
+        "control_type": "Button",
+        "name": "Novedades",
+        "automation_id": "FREButton",
+        "class_name": "Button",
+        "rect": {
+         "left": 1354,
+         "top": 69,
+         "right": 1384,
+         "bottom": 99
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "Invoke",
+         "ScrollItem"
+        ],
+        "path": "Window[0]/Pane[2]/Pane[0]/Button[9]",
+        "children": []
+       },
+       {
+        "control_type": "Button",
+        "name": "Avatar del usuario",
+        "automation_id": "AvatarButton",
+        "class_name": "Button",
+        "rect": {
+         "left": 1388,
+         "top": 68,
+         "right": 1418,
+         "bottom": 100
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "Invoke",
+         "ScrollItem"
+        ],
+        "path": "Window[0]/Pane[2]/Pane[0]/Button[10]",
+        "children": []
+       },
+       {
+        "control_type": "Button",
+        "name": "Configuración",
+        "automation_id": "SettingsButton",
+        "class_name": "Button",
+        "rect": {
+         "left": 1422,
+         "top": 68,
+         "right": 1452,
+         "bottom": 100
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "Invoke",
+         "ScrollItem"
+        ],
+        "path": "Window[0]/Pane[2]/Pane[0]/Button[11]",
+        "children": []
+       },
+       {
+        "control_type": "Window",
+        "name": "",
+        "automation_id": "PrivacyTeachingTip",
+        "class_name": "Microsoft.UI.Xaml.Controls.TeachingTip",
+        "rect": null,
+        "enabled": true,
+        "offscreen": true,
+        "is_password": false,
+        "patterns": [
+         "ScrollItem"
+        ],
+        "path": "Window[0]/Pane[2]/Pane[0]/Window[0]",
+        "children": []
+       },
+       {
+        "control_type": "Pane",
+        "name": "",
+        "automation_id": "PsDownloadDetailTeachingTip",
+        "class_name": "Microsoft.UI.Xaml.Controls.TeachingTip",
+        "rect": null,
+        "enabled": true,
+        "offscreen": true,
+        "is_password": false,
+        "patterns": [
+         "ScrollItem"
+        ],
+        "path": "Window[0]/Pane[2]/Pane[0]/Pane[0]",
+        "children": []
+       },
+       {
+        "control_type": "Pane",
+        "name": "El modelo de IA local debe terminar de descargarse para usar esta función cuando se cerró la sesión.",
+        "automation_id": "PsDownloadLightTeachingTip",
+        "class_name": "Microsoft.UI.Xaml.Controls.TeachingTip",
+        "rect": null,
+        "enabled": true,
+        "offscreen": true,
+        "is_password": false,
+        "patterns": [
+         "ScrollItem"
+        ],
+        "path": "Window[0]/Pane[2]/Pane[0]/Pane[1]",
+        "children": []
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "control_type": "Pane",
+    "name": "",
+    "automation_id": "",
+    "class_name": "Microsoft.UI.Content.DesktopChildSiteBridge",
+    "rect": {
+     "left": 32,
+     "top": 741,
+     "right": 1460,
+     "bottom": 773
+    },
+    "enabled": false,
+    "offscreen": false,
+    "is_password": false,
+    "patterns": [],
+    "path": "Window[0]/Pane[3]",
+    "children": [
+     {
+      "control_type": "Pane",
+      "name": "",
+      "automation_id": "",
+      "class_name": "InputSiteWindowClass",
+      "rect": {
+       "left": 32,
+       "top": 741,
+       "right": 1460,
+       "bottom": 773
+      },
+      "enabled": false,
+      "offscreen": false,
+      "is_password": false,
+      "patterns": [],
+      "path": "Window[0]/Pane[3]/Pane[0]",
+      "children": [
+       {
+        "control_type": "Text",
+        "name": "Línea 1,\nColumna 1",
+        "automation_id": "ContentTextBlock",
+        "class_name": "TextBlock",
+        "rect": {
+         "left": 48,
+         "top": 749,
+         "right": 107,
+         "bottom": 765
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "ScrollItem",
+         "Text"
+        ],
+        "path": "Window[0]/Pane[3]/Pane[0]/Text[0]",
+        "children": []
+       },
+       {
+        "control_type": "Text",
+        "name": "5 caracteres.",
+        "automation_id": "ContentTextBlock",
+        "class_name": "TextBlock",
+        "rect": {
+         "left": 137,
+         "top": 749,
+         "right": 205,
+         "bottom": 765
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "ScrollItem",
+         "Text"
+        ],
+        "path": "Window[0]/Pane[3]/Pane[0]/Text[1]",
+        "children": []
+       },
+       {
+        "control_type": "Text",
+        "name": "Texto sin formato",
+        "automation_id": "ContentTextBlock",
+        "class_name": "TextBlock",
+        "rect": {
+         "left": 339,
+         "top": 741,
+         "right": 446,
+         "bottom": 773
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "ScrollItem",
+         "Text"
+        ],
+        "path": "Window[0]/Pane[3]/Pane[0]/Text[2]",
+        "children": []
+       },
+       {
+        "control_type": "Text",
+        "name": "Zoom",
+        "automation_id": "ContentTextBlock",
+        "class_name": "TextBlock",
+        "rect": {
+         "left": 1089,
+         "top": 749,
+         "right": 1121,
+         "bottom": 765
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "ScrollItem",
+         "Text"
+        ],
+        "path": "Window[0]/Pane[3]/Pane[0]/Text[3]",
+        "children": []
+       },
+       {
+        "control_type": "Text",
+        "name": " Windows (CRLF)",
+        "automation_id": "ContentTextBlock",
+        "class_name": "TextBlock",
+        "rect": {
+         "left": 1157,
+         "top": 749,
+         "right": 1248,
+         "bottom": 765
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "ScrollItem",
+         "Text"
+        ],
+        "path": "Window[0]/Pane[3]/Pane[0]/Text[4]",
+        "children": []
+       },
+       {
+        "control_type": "Text",
+        "name": " UTF-8",
+        "automation_id": "ContentTextBlock",
+        "class_name": "TextBlock",
+        "rect": {
+         "left": 1325,
+         "top": 749,
+         "right": 1361,
+         "bottom": 765
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "ScrollItem",
+         "Text"
+        ],
+        "path": "Window[0]/Pane[3]/Pane[0]/Text[5]",
+        "children": []
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "control_type": "TitleBar",
+    "name": "",
+    "automation_id": "",
+    "class_name": "",
+    "rect": null,
+    "enabled": true,
+    "offscreen": true,
+    "is_password": false,
+    "patterns": [
+     "Value"
+    ],
+    "path": "Window[0]/TitleBar[0]",
+    "children": [
+     {
+      "control_type": "MenuBar",
+      "name": "Sistema",
+      "automation_id": "MenuBar",
+      "class_name": "",
+      "rect": {
+       "left": 34,
+       "top": 34,
+       "right": 56,
+       "bottom": 56
+      },
+      "enabled": true,
+      "offscreen": false,
+      "is_password": false,
+      "patterns": [],
+      "path": "Window[0]/TitleBar[0]/MenuBar[0]",
+      "children": [
+       {
+        "control_type": "MenuItem",
+        "name": "Sistema",
+        "automation_id": "",
+        "class_name": "",
+        "rect": {
+         "left": 34,
+         "top": 34,
+         "right": 56,
+         "bottom": 56
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "Invoke",
+         "ExpandCollapse"
+        ],
+        "path": "Window[0]/TitleBar[0]/MenuBar[0]/MenuItem[0]",
+        "children": []
+       }
+      ]
+     },
+     {
+      "control_type": "Button",
+      "name": "Minimizar",
+      "automation_id": "",
+      "class_name": "",
+      "rect": {
+       "left": 1321,
+       "top": 27,
+       "right": 1368,
+       "bottom": 57
+      },
+      "enabled": true,
+      "offscreen": false,
+      "is_password": false,
+      "patterns": [
+       "Invoke"
+      ],
+      "path": "Window[0]/TitleBar[0]/Button[0]",
+      "children": []
+     },
+     {
+      "control_type": "Button",
+      "name": "Maximizar",
+      "automation_id": "",
+      "class_name": "",
+      "rect": {
+       "left": 1368,
+       "top": 27,
+       "right": 1414,
+       "bottom": 57
+      },
+      "enabled": true,
+      "offscreen": false,
+      "is_password": false,
+      "patterns": [
+       "Invoke"
+      ],
+      "path": "Window[0]/TitleBar[0]/Button[1]",
+      "children": []
+     },
+     {
+      "control_type": "Button",
+      "name": "Cerrar",
+      "automation_id": "",
+      "class_name": "",
+      "rect": {
+       "left": 1414,
+       "top": 27,
+       "right": 1461,
+       "bottom": 57
+      },
+      "enabled": true,
+      "offscreen": false,
+      "is_password": false,
+      "patterns": [
+       "Invoke"
+      ],
+      "path": "Window[0]/TitleBar[0]/Button[2]",
+      "children": []
+     }
+    ]
+   }
+  ]
+ }
+}

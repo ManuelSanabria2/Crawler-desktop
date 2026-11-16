@@ -1,0 +1,3228 @@
+{
+ "handle": 591110,
+ "title": "Configuración",
+ "class_name": "ApplicationFrameWindow",
+ "process_id": 12460,
+ "process_name": "SystemSettings.exe",
+ "captured_at": "2026-11-11T07:21:25.300352Z",
+ "elapsed_s": 0.17224030000215862,
+ "node_count": 161,
+ "max_depth_reached": 8,
+ "partial": false,
+ "partial_reasons": [],
+ "error_count": 0,
+ "root": {
+  "control_type": "Window",
+  "name": "Configuración",
+  "automation_id": "",
+  "class_name": "ApplicationFrameWindow",
+  "rect": {
+   "left": -8,
+   "top": -8,
+   "right": 1928,
+   "bottom": 1040
+  },
+  "enabled": true,
+  "offscreen": false,
+  "is_password": false,
+  "patterns": [
+   "Window",
+   "Transform"
+  ],
+  "path": "Window[0]",
+  "children": [
+   {
+    "control_type": "Window",
+    "name": "Configuración",
+    "automation_id": "TitleBar",
+    "class_name": "ApplicationFrameTitleBarWindow",
+    "rect": {
+     "left": 1732,
+     "top": 0,
+     "right": 1920,
+     "bottom": 32
+    },
+    "enabled": true,
+    "offscreen": false,
+    "is_password": false,
+    "patterns": [
+     "Value"
+    ],
+    "path": "Window[0]/Window[0]",
+    "children": [
+     {
+      "control_type": "MenuBar",
+      "name": "Sistema",
+      "automation_id": "SystemMenuBar",
+      "class_name": "",
+      "rect": null,
+      "enabled": true,
+      "offscreen": false,
+      "is_password": false,
+      "patterns": [],
+      "path": "Window[0]/Window[0]/MenuBar[0]",
+      "children": [
+       {
+        "control_type": "MenuItem",
+        "name": "Sistema",
+        "automation_id": "",
+        "class_name": "",
+        "rect": null,
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "ExpandCollapse"
+        ],
+        "path": "Window[0]/Window[0]/MenuBar[0]/MenuItem[0]",
+        "children": []
+       }
+      ]
+     },
+     {
+      "control_type": "Button",
+      "name": "Minimizar Configuración",
+      "automation_id": "Minimize",
+      "class_name": "",
+      "rect": {
+       "left": 1782,
+       "top": 0,
+       "right": 1828,
+       "bottom": 32
+      },
+      "enabled": true,
+      "offscreen": false,
+      "is_password": false,
+      "patterns": [
+       "Invoke"
+      ],
+      "path": "Window[0]/Window[0]/Button[0]",
+      "children": []
+     },
+     {
+      "control_type": "Button",
+      "name": "Restaurar Configuración",
+      "automation_id": "Maximize",
+      "class_name": "",
+      "rect": {
+       "left": 1828,
+       "top": 0,
+       "right": 1874,
+       "bottom": 32
+      },
+      "enabled": true,
+      "offscreen": false,
+      "is_password": false,
+      "patterns": [
+       "Invoke"
+      ],
+      "path": "Window[0]/Window[0]/Button[1]",
+      "children": []
+     },
+     {
+      "control_type": "Button",
+      "name": "Cerrar Configuración",
+      "automation_id": "Close",
+      "class_name": "",
+      "rect": {
+       "left": 1874,
+       "top": 0,
+       "right": 1920,
+       "bottom": 32
+      },
+      "enabled": true,
+      "offscreen": false,
+      "is_password": false,
+      "patterns": [
+       "Invoke"
+      ],
+      "path": "Window[0]/Window[0]/Button[2]",
+      "children": []
+     }
+    ]
+   },
+   {
+    "control_type": "Window",
+    "name": "Configuración",
+    "automation_id": "",
+    "class_name": "Windows.UI.Core.CoreWindow",
+    "rect": {
+     "left": 0,
+     "top": 0,
+     "right": 1920,
+     "bottom": 1032
+    },
+    "enabled": true,
+    "offscreen": false,
+    "is_password": false,
+    "patterns": [],
+    "path": "Window[0]/Window[1]",
+    "children": [
+     {
+      "control_type": "Text",
+      "name": "Configuración",
+      "automation_id": "SettingsLabel",
+      "class_name": "TextBlock",
+      "rect": {
+       "left": 50,
+       "top": 16,
+       "right": 1732,
+       "bottom": 32
+      },
+      "enabled": true,
+      "offscreen": false,
+      "is_password": false,
+      "patterns": [
+       "ScrollItem",
+       "Text"
+      ],
+      "path": "Window[0]/Window[1]/Text[0]",
+      "children": []
+     },
+     {
+      "control_type": "Edit",
+      "name": "Cuadro de búsqueda, Buscar una opción",
+      "automation_id": "CommandSearchTextBox",
+      "class_name": "TextBox",
+      "rect": {
+       "left": 702,
+       "top": 8,
+       "right": 1218,
+       "bottom": 40
+      },
+      "enabled": true,
+      "offscreen": false,
+      "is_password": false,
+      "patterns": [
+       "Value",
+       "ScrollItem",
+       "Text"
+      ],
+      "path": "Window[0]/Window[1]/Edit[0]",
+      "children": []
+     },
+     {
+      "control_type": "Custom",
+      "name": "",
+      "automation_id": "PermanentNavigationView",
+      "class_name": "",
+      "rect": {
+       "left": 0,
+       "top": 0,
+       "right": 1920,
+       "bottom": 1032
+      },
+      "enabled": true,
+      "offscreen": false,
+      "is_password": false,
+      "patterns": [
+       "Selection",
+       "ScrollItem"
+      ],
+      "path": "Window[0]/Window[1]/Custom[0]",
+      "children": [
+       {
+        "control_type": "Button",
+        "name": "Atrás",
+        "automation_id": "NavigationViewBackButton",
+        "class_name": "Button",
+        "rect": {
+         "left": 4,
+         "top": 6,
+         "right": 44,
+         "bottom": 42
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "Invoke",
+         "ScrollItem"
+        ],
+        "path": "Window[0]/Window[1]/Custom[0]/Button[0]",
+        "children": []
+       },
+       {
+        "control_type": "Window",
+        "name": "",
+        "automation_id": "PaneRoot",
+        "class_name": "SplitViewPane",
+        "rect": {
+         "left": 0,
+         "top": 0,
+         "right": 300,
+         "bottom": 1032
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "ScrollItem"
+        ],
+        "path": "Window[0]/Window[1]/Custom[0]/Window[0]",
+        "children": [
+         {
+          "control_type": "Button",
+          "name": "REDACTADO REDACTADO",
+          "automation_id": "UserProfileControlButton",
+          "class_name": "Button",
+          "rect": {
+           "left": 5,
+           "top": 49,
+           "right": 295,
+           "bottom": 124
+          },
+          "enabled": true,
+          "offscreen": false,
+          "is_password": false,
+          "patterns": [
+           "Invoke",
+           "ScrollItem"
+          ],
+          "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Button[0]",
+          "children": [
+           {
+            "control_type": "Image",
+            "name": "Imagen de perfil del usuario",
+            "automation_id": "",
+            "class_name": "Image",
+            "rect": {
+             "left": 16,
+             "top": 57,
+             "right": 76,
+             "bottom": 117
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Button[0]/Image[0]",
+            "children": []
+           },
+           {
+            "control_type": "Text",
+            "name": "REDACTADO",
+            "automation_id": "UserName",
+            "class_name": "TextBlock",
+            "rect": {
+             "left": 88,
+             "top": 70,
+             "right": 288,
+             "bottom": 89
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "ScrollItem",
+             "Text"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Button[0]/Text[0]",
+            "children": []
+           },
+           {
+            "control_type": "Text",
+            "name": "REDACTADO",
+            "automation_id": "UserAccount",
+            "class_name": "TextBlock",
+            "rect": {
+             "left": 88,
+             "top": 89,
+             "right": 288,
+             "bottom": 105
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "ScrollItem",
+             "Text"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Button[0]/Text[1]",
+            "children": []
+           }
+          ]
+         },
+         {
+          "control_type": "Pane",
+          "name": "",
+          "automation_id": "MenuItemsScrollViewer",
+          "class_name": "ScrollViewer",
+          "rect": {
+           "left": 0,
+           "top": 141,
+           "right": 300,
+           "bottom": 1024
+          },
+          "enabled": true,
+          "offscreen": false,
+          "is_password": false,
+          "patterns": [
+           "Scroll",
+           "ScrollItem"
+          ],
+          "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]",
+          "children": [
+           {
+            "control_type": "Group",
+            "name": "",
+            "automation_id": "MenuItemsHost",
+            "class_name": "",
+            "rect": {
+             "left": 16,
+             "top": 143,
+             "right": 296,
+             "bottom": 619
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]",
+            "children": [
+             {
+              "control_type": "ListItem",
+              "name": "Inicio",
+              "automation_id": "",
+              "class_name": "Microsoft.UI.Xaml.Controls.NavigationViewItem",
+              "rect": {
+               "left": 16,
+               "top": 143,
+               "right": 296,
+               "bottom": 179
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "SelectionItem",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[0]",
+              "children": [
+               {
+                "control_type": "Image",
+                "name": "",
+                "automation_id": "",
+                "class_name": "Image",
+                "rect": {
+                 "left": 26,
+                 "top": 151,
+                 "right": 46,
+                 "bottom": 171
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[0]/Image[0]",
+                "children": []
+               }
+              ]
+             },
+             {
+              "control_type": "ListItem",
+              "name": "Sistema",
+              "automation_id": "",
+              "class_name": "Microsoft.UI.Xaml.Controls.NavigationViewItem",
+              "rect": {
+               "left": 16,
+               "top": 183,
+               "right": 296,
+               "bottom": 219
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "SelectionItem",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[1]",
+              "children": [
+               {
+                "control_type": "Image",
+                "name": "",
+                "automation_id": "",
+                "class_name": "Image",
+                "rect": {
+                 "left": 26,
+                 "top": 191,
+                 "right": 46,
+                 "bottom": 211
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[1]/Image[0]",
+                "children": []
+               }
+              ]
+             },
+             {
+              "control_type": "ListItem",
+              "name": "Bluetooth y dispositivos",
+              "automation_id": "",
+              "class_name": "Microsoft.UI.Xaml.Controls.NavigationViewItem",
+              "rect": {
+               "left": 16,
+               "top": 223,
+               "right": 296,
+               "bottom": 259
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "SelectionItem",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[2]",
+              "children": [
+               {
+                "control_type": "Image",
+                "name": "",
+                "automation_id": "",
+                "class_name": "Image",
+                "rect": {
+                 "left": 26,
+                 "top": 231,
+                 "right": 46,
+                 "bottom": 251
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[2]/Image[0]",
+                "children": []
+               }
+              ]
+             },
+             {
+              "control_type": "ListItem",
+              "name": "Red e Internet",
+              "automation_id": "",
+              "class_name": "Microsoft.UI.Xaml.Controls.NavigationViewItem",
+              "rect": {
+               "left": 16,
+               "top": 263,
+               "right": 296,
+               "bottom": 299
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "SelectionItem",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[3]",
+              "children": [
+               {
+                "control_type": "Image",
+                "name": "",
+                "automation_id": "",
+                "class_name": "Image",
+                "rect": {
+                 "left": 26,
+                 "top": 271,
+                 "right": 46,
+                 "bottom": 291
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[3]/Image[0]",
+                "children": []
+               }
+              ]
+             },
+             {
+              "control_type": "ListItem",
+              "name": "Personalización",
+              "automation_id": "",
+              "class_name": "Microsoft.UI.Xaml.Controls.NavigationViewItem",
+              "rect": {
+               "left": 16,
+               "top": 303,
+               "right": 296,
+               "bottom": 339
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "SelectionItem",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[4]",
+              "children": [
+               {
+                "control_type": "Image",
+                "name": "",
+                "automation_id": "",
+                "class_name": "Image",
+                "rect": {
+                 "left": 26,
+                 "top": 311,
+                 "right": 46,
+                 "bottom": 331
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[4]/Image[0]",
+                "children": []
+               }
+              ]
+             },
+             {
+              "control_type": "ListItem",
+              "name": "Aplicaciones",
+              "automation_id": "",
+              "class_name": "Microsoft.UI.Xaml.Controls.NavigationViewItem",
+              "rect": {
+               "left": 16,
+               "top": 343,
+               "right": 296,
+               "bottom": 379
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "SelectionItem",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[5]",
+              "children": [
+               {
+                "control_type": "Image",
+                "name": "",
+                "automation_id": "",
+                "class_name": "Image",
+                "rect": {
+                 "left": 26,
+                 "top": 351,
+                 "right": 46,
+                 "bottom": 371
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[5]/Image[0]",
+                "children": []
+               }
+              ]
+             },
+             {
+              "control_type": "ListItem",
+              "name": "Cuentas",
+              "automation_id": "",
+              "class_name": "Microsoft.UI.Xaml.Controls.NavigationViewItem",
+              "rect": {
+               "left": 16,
+               "top": 383,
+               "right": 296,
+               "bottom": 419
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "SelectionItem",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[6]",
+              "children": [
+               {
+                "control_type": "Image",
+                "name": "",
+                "automation_id": "",
+                "class_name": "Image",
+                "rect": {
+                 "left": 26,
+                 "top": 391,
+                 "right": 46,
+                 "bottom": 411
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[6]/Image[0]",
+                "children": []
+               }
+              ]
+             },
+             {
+              "control_type": "ListItem",
+              "name": "Hora e idioma",
+              "automation_id": "",
+              "class_name": "Microsoft.UI.Xaml.Controls.NavigationViewItem",
+              "rect": {
+               "left": 16,
+               "top": 423,
+               "right": 296,
+               "bottom": 459
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "SelectionItem",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[7]",
+              "children": [
+               {
+                "control_type": "Image",
+                "name": "",
+                "automation_id": "",
+                "class_name": "Image",
+                "rect": {
+                 "left": 26,
+                 "top": 431,
+                 "right": 46,
+                 "bottom": 451
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[7]/Image[0]",
+                "children": []
+               }
+              ]
+             },
+             {
+              "control_type": "ListItem",
+              "name": "Juegos",
+              "automation_id": "",
+              "class_name": "Microsoft.UI.Xaml.Controls.NavigationViewItem",
+              "rect": {
+               "left": 16,
+               "top": 463,
+               "right": 296,
+               "bottom": 499
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "SelectionItem",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[8]",
+              "children": [
+               {
+                "control_type": "Image",
+                "name": "",
+                "automation_id": "",
+                "class_name": "Image",
+                "rect": {
+                 "left": 26,
+                 "top": 471,
+                 "right": 46,
+                 "bottom": 491
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[8]/Image[0]",
+                "children": []
+               }
+              ]
+             },
+             {
+              "control_type": "ListItem",
+              "name": "Accesibilidad",
+              "automation_id": "",
+              "class_name": "Microsoft.UI.Xaml.Controls.NavigationViewItem",
+              "rect": {
+               "left": 16,
+               "top": 503,
+               "right": 296,
+               "bottom": 539
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "SelectionItem",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[9]",
+              "children": [
+               {
+                "control_type": "Image",
+                "name": "",
+                "automation_id": "",
+                "class_name": "Image",
+                "rect": {
+                 "left": 26,
+                 "top": 511,
+                 "right": 46,
+                 "bottom": 531
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[9]/Image[0]",
+                "children": []
+               }
+              ]
+             },
+             {
+              "control_type": "ListItem",
+              "name": "Privacidad y seguridad",
+              "automation_id": "",
+              "class_name": "Microsoft.UI.Xaml.Controls.NavigationViewItem",
+              "rect": {
+               "left": 16,
+               "top": 543,
+               "right": 296,
+               "bottom": 579
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "SelectionItem",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[10]",
+              "children": [
+               {
+                "control_type": "Image",
+                "name": "",
+                "automation_id": "",
+                "class_name": "Image",
+                "rect": {
+                 "left": 26,
+                 "top": 551,
+                 "right": 46,
+                 "bottom": 571
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[10]/Image[0]",
+                "children": []
+               }
+              ]
+             },
+             {
+              "control_type": "ListItem",
+              "name": "Windows Update",
+              "automation_id": "",
+              "class_name": "Microsoft.UI.Xaml.Controls.NavigationViewItem",
+              "rect": {
+               "left": 16,
+               "top": 583,
+               "right": 296,
+               "bottom": 619
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "SelectionItem",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[11]",
+              "children": [
+               {
+                "control_type": "Image",
+                "name": "",
+                "automation_id": "",
+                "class_name": "Image",
+                "rect": {
+                 "left": 26,
+                 "top": 591,
+                 "right": 46,
+                 "bottom": 611
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[11]/Image[0]",
+                "children": []
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "control_type": "Pane",
+          "name": "",
+          "automation_id": "FooterItemsScrollViewer",
+          "class_name": "ScrollViewer",
+          "rect": null,
+          "enabled": true,
+          "offscreen": true,
+          "is_password": false,
+          "patterns": [
+           "Scroll",
+           "ScrollItem"
+          ],
+          "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[1]",
+          "children": [
+           {
+            "control_type": "Group",
+            "name": "",
+            "automation_id": "FooterMenuItemsHost",
+            "class_name": "",
+            "rect": null,
+            "enabled": true,
+            "offscreen": true,
+            "is_password": false,
+            "patterns": [
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[1]/Group[0]",
+            "children": []
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "control_type": "Group",
+        "name": "",
+        "automation_id": "PermanentNavigationViewBreadcrumbBar",
+        "class_name": "LandmarkTarget",
+        "rect": {
+         "left": 610,
+         "top": 51,
+         "right": 946,
+         "bottom": 95
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "ScrollItem"
+        ],
+        "path": "Window[0]/Window[1]/Custom[0]/Group[0]",
+        "children": [
+         {
+          "control_type": "Button",
+          "name": "Personalización",
+          "automation_id": "",
+          "class_name": "Microsoft.UI.Xaml.Controls.BreadcrumbBarItem",
+          "rect": {
+           "left": 610,
+           "top": 51,
+           "right": 848,
+           "bottom": 95
+          },
+          "enabled": true,
+          "offscreen": false,
+          "is_password": false,
+          "patterns": [
+           "Invoke",
+           "ScrollItem"
+          ],
+          "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Button[0]",
+          "children": [
+           {
+            "control_type": "Text",
+            "name": "Personalización",
+            "automation_id": "",
+            "class_name": "TextBlock",
+            "rect": {
+             "left": 611,
+             "top": 54,
+             "right": 807,
+             "bottom": 92
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "ScrollItem",
+             "Text"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Button[0]/Text[0]",
+            "children": []
+           }
+          ]
+         },
+         {
+          "control_type": "Button",
+          "name": "Colores",
+          "automation_id": "",
+          "class_name": "Microsoft.UI.Xaml.Controls.BreadcrumbBarItem",
+          "rect": {
+           "left": 849,
+           "top": 54,
+           "right": 946,
+           "bottom": 92
+          },
+          "enabled": true,
+          "offscreen": false,
+          "is_password": false,
+          "patterns": [
+           "Invoke",
+           "ScrollItem"
+          ],
+          "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Button[1]",
+          "children": [
+           {
+            "control_type": "Text",
+            "name": "Colores",
+            "automation_id": "",
+            "class_name": "TextBlock",
+            "rect": {
+             "left": 849,
+             "top": 54,
+             "right": 946,
+             "bottom": 92
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "ScrollItem",
+             "Text"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Button[1]/Text[0]",
+            "children": []
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "control_type": "Group",
+        "name": "",
+        "automation_id": "",
+        "class_name": "LandmarkTarget",
+        "rect": {
+         "left": 326,
+         "top": 106,
+         "right": 1920,
+         "bottom": 1032
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "ScrollItem"
+        ],
+        "path": "Window[0]/Window[1]/Custom[0]/Group[1]",
+        "children": [
+         {
+          "control_type": "Pane",
+          "name": "",
+          "automation_id": "ItemsControlScrollViewer",
+          "class_name": "ScrollViewer",
+          "rect": {
+           "left": 326,
+           "top": 106,
+           "right": 1920,
+           "bottom": 1032
+          },
+          "enabled": true,
+          "offscreen": false,
+          "is_password": false,
+          "patterns": [
+           "Scroll",
+           "ScrollItem"
+          ],
+          "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]",
+          "children": [
+           {
+            "control_type": "StatusBar",
+            "name": "",
+            "automation_id": "SettingsPageHostActivationError",
+            "class_name": "Microsoft.UI.Xaml.Controls.InfoBar",
+            "rect": {
+             "left": 611,
+             "top": 111,
+             "right": 1611,
+             "bottom": 161
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/StatusBar[0]",
+            "children": [
+             {
+              "control_type": "Text",
+              "name": "Icono informativo",
+              "automation_id": "StandardIcon",
+              "class_name": "TextBlock",
+              "rect": {
+               "left": 628,
+               "top": 128,
+               "right": 644,
+               "bottom": 144
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "ScrollItem",
+               "Text"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/StatusBar[0]/Text[0]",
+              "children": []
+             },
+             {
+              "control_type": "Text",
+              "name": "",
+              "automation_id": "Title",
+              "class_name": "TextBlock",
+              "rect": null,
+              "enabled": true,
+              "offscreen": true,
+              "is_password": false,
+              "patterns": [
+               "ScrollItem",
+               "Text"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/StatusBar[0]/Text[1]",
+              "children": []
+             },
+             {
+              "control_type": "Text",
+              "name": "Tienes que activar Windows antes de poder personalizar tu PC.",
+              "automation_id": "Message",
+              "class_name": "TextBlock",
+              "rect": {
+               "left": 658,
+               "top": 126,
+               "right": 1045,
+               "bottom": 145
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "ScrollItem",
+               "Text"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/StatusBar[0]/Text[2]",
+              "children": []
+             },
+             {
+              "control_type": "Hyperlink",
+              "name": "Tienes que activar Windows antes de poder personalizar tu PC., Activar ahora",
+              "automation_id": "",
+              "class_name": "Hyperlink",
+              "rect": {
+               "left": 1488,
+               "top": 120,
+               "right": 1594,
+               "bottom": 152
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "Invoke",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/StatusBar[0]/Hyperlink[0]",
+              "children": []
+             }
+            ]
+           },
+           {
+            "control_type": "Image",
+            "name": "Vista previa de escritorio",
+            "automation_id": "BackgroundImage",
+            "class_name": "Image",
+            "rect": {
+             "left": 619,
+             "top": 172,
+             "right": 853,
+             "bottom": 296
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Image[0]",
+            "children": []
+           },
+           {
+            "control_type": "Group",
+            "name": "Elige tu modo",
+            "automation_id": "",
+            "class_name": "NamedContainerAutomationPeer",
+            "rect": {
+             "left": 611,
+             "top": 319,
+             "right": 1611,
+             "bottom": 388
+            },
+            "enabled": false,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[0]",
+            "children": [
+             {
+              "control_type": "Text",
+              "name": "Elige tu modo",
+              "automation_id": "",
+              "class_name": "TextBlock",
+              "rect": {
+               "left": 670,
+               "top": 336,
+               "right": 757,
+               "bottom": 355
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "ScrollItem",
+               "Text"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[0]/Text[0]",
+              "children": []
+             },
+             {
+              "control_type": "Text",
+              "name": "Cambiar los colores que aparecen en Windows y en las aplicaciones",
+              "automation_id": "",
+              "class_name": "TextBlock",
+              "rect": {
+               "left": 670,
+               "top": 355,
+               "right": 1036,
+               "bottom": 371
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "ScrollItem",
+               "Text"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[0]/Text[1]",
+              "children": []
+             },
+             {
+              "control_type": "ComboBox",
+              "name": "Elige tu modo",
+              "automation_id": "SystemSettings_Personalize_Color_ColorMode_ComboBox",
+              "class_name": "ComboBox",
+              "rect": {
+               "left": 1460,
+               "top": 334,
+               "right": 1598,
+               "bottom": 374
+              },
+              "enabled": false,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "ExpandCollapse",
+               "Selection",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[0]/ComboBox[0]",
+              "children": [
+               {
+                "control_type": "ListItem",
+                "name": "Claro",
+                "automation_id": "ContentPresenter",
+                "class_name": "ComboBoxItem",
+                "rect": {
+                 "left": 1476,
+                 "top": 344,
+                 "right": 1556,
+                 "bottom": 363
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[0]/ComboBox[0]/ListItem[0]",
+                "children": []
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "control_type": "Text",
+            "name": "Efectos de transparencia",
+            "automation_id": "",
+            "class_name": "TextBlock",
+            "rect": {
+             "left": 670,
+             "top": 409,
+             "right": 821,
+             "bottom": 428
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "ScrollItem",
+             "Text"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Text[0]",
+            "children": []
+           },
+           {
+            "control_type": "Text",
+            "name": "Las ventanas y las superficies se muestran translúcidas",
+            "automation_id": "",
+            "class_name": "TextBlock",
+            "rect": {
+             "left": 670,
+             "top": 428,
+             "right": 964,
+             "bottom": 444
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "ScrollItem",
+             "Text"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Text[1]",
+            "children": []
+           },
+           {
+            "control_type": "Button",
+            "name": "Efectos de transparencia",
+            "automation_id": "SystemSettings_Personalize_Color_EnableTransparency_ToggleSwitch",
+            "class_name": "ToggleSwitch",
+            "rect": {
+             "left": 1466,
+             "top": 406,
+             "right": 1594,
+             "bottom": 446
+            },
+            "enabled": false,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "Toggle",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Button[0]",
+            "children": []
+           },
+           {
+            "control_type": "Group",
+            "name": "Color de énfasis",
+            "automation_id": "",
+            "class_name": "NamedContainerAutomationPeer",
+            "rect": {
+             "left": 611,
+             "top": 464,
+             "right": 1611,
+             "bottom": 1032
+            },
+            "enabled": false,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]",
+            "children": [
+             {
+              "control_type": "Text",
+              "name": "Color de énfasis",
+              "automation_id": "",
+              "class_name": "TextBlock",
+              "rect": {
+               "left": 670,
+               "top": 489,
+               "right": 769,
+               "bottom": 508
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "ScrollItem",
+               "Text"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/Text[0]",
+              "children": []
+             },
+             {
+              "control_type": "ComboBox",
+              "name": "Color de énfasis",
+              "automation_id": "SystemSettings_Personalize_Color_AccentColorMode_ComboBox",
+              "class_name": "ComboBox",
+              "rect": {
+               "left": 1432,
+               "top": 479,
+               "right": 1570,
+               "bottom": 519
+              },
+              "enabled": false,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "ExpandCollapse",
+               "Selection",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/ComboBox[0]",
+              "children": [
+               {
+                "control_type": "ListItem",
+                "name": "Manual",
+                "automation_id": "ContentPresenter",
+                "class_name": "ComboBoxItem",
+                "rect": {
+                 "left": 1448,
+                 "top": 489,
+                 "right": 1528,
+                 "bottom": 508
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/ComboBox[0]/ListItem[0]",
+                "children": []
+               }
+              ]
+             },
+             {
+              "control_type": "Button",
+              "name": "Mostrar más valores de configuración",
+              "automation_id": "EntityItemButton",
+              "class_name": "ExpanderToggleButton",
+              "rect": {
+               "left": 1570,
+               "top": 483,
+               "right": 1602,
+               "bottom": 515
+              },
+              "enabled": false,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "ExpandCollapse",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/Button[0]",
+              "children": []
+             },
+             {
+              "control_type": "Text",
+              "name": "Colores recientes",
+              "automation_id": "",
+              "class_name": "TextBlock",
+              "rect": {
+               "left": 670,
+               "top": 542,
+               "right": 776,
+               "bottom": 561
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "ScrollItem",
+               "Text"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/Text[1]",
+              "children": []
+             },
+             {
+              "control_type": "List",
+              "name": "Colores recientes",
+              "automation_id": "SystemSettings_Personalize_Color_RecentColors_EntityItemColorGrid",
+              "class_name": "GridView",
+              "rect": {
+               "left": 670,
+               "top": 567,
+               "right": 1566,
+               "bottom": 630
+              },
+              "enabled": false,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "Selection",
+               "Scroll",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[0]",
+              "children": [
+               {
+                "control_type": "ListItem",
+                "name": "Azul predeterminado",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 670,
+                 "top": 567,
+                 "right": 720,
+                 "bottom": 617
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[0]/ListItem[0]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Espuma de mar",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 723,
+                 "top": 567,
+                 "right": 773,
+                 "bottom": 617
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[0]/ListItem[1]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Tormenta",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 776,
+                 "top": 567,
+                 "right": 826,
+                 "bottom": 617
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[0]/ListItem[2]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Rojo",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 829,
+                 "top": 567,
+                 "right": 879,
+                 "bottom": 617
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[0]/ListItem[3]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Rosa brillante",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 882,
+                 "top": 567,
+                 "right": 932,
+                 "bottom": 617
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[0]/ListItem[4]",
+                "children": []
+               }
+              ]
+             },
+             {
+              "control_type": "Text",
+              "name": "Colores de Windows",
+              "automation_id": "",
+              "class_name": "TextBlock",
+              "rect": {
+               "left": 670,
+               "top": 648,
+               "right": 797,
+               "bottom": 667
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "ScrollItem",
+               "Text"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/Text[2]",
+              "children": []
+             },
+             {
+              "control_type": "List",
+              "name": "Colores de Windows",
+              "automation_id": "SystemSettings_Personalize_Color_SuggestedColors_EntityItemColorGrid",
+              "class_name": "GridView",
+              "rect": {
+               "left": 670,
+               "top": 673,
+               "right": 1566,
+               "bottom": 1001
+              },
+              "enabled": false,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "Selection",
+               "Scroll",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]",
+              "children": [
+               {
+                "control_type": "ListItem",
+                "name": "Oro amarillo",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 670,
+                 "top": 673,
+                 "right": 720,
+                 "bottom": 723
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[0]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Dorado",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 723,
+                 "top": 673,
+                 "right": 773,
+                 "bottom": 723
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[1]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Naranja brillante",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 776,
+                 "top": 673,
+                 "right": 826,
+                 "bottom": 723
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[2]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Anaranjado oscuro",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 829,
+                 "top": 673,
+                 "right": 879,
+                 "bottom": 723
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[3]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Óxido",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 882,
+                 "top": 673,
+                 "right": 932,
+                 "bottom": 723
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[4]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Óxido pálido",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 935,
+                 "top": 673,
+                 "right": 985,
+                 "bottom": 723
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[5]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Rojo ladrillo",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 988,
+                 "top": 673,
+                 "right": 1038,
+                 "bottom": 723
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[6]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Rojo mod",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 1041,
+                 "top": 673,
+                 "right": 1091,
+                 "bottom": 723
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[7]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Rojo pálido",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 1094,
+                 "top": 673,
+                 "right": 1144,
+                 "bottom": 723
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[8]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Rojo",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 670,
+                 "top": 726,
+                 "right": 720,
+                 "bottom": 776
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[9]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Rosa brillante",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 723,
+                 "top": 726,
+                 "right": 773,
+                 "bottom": 776
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[10]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Rosa",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 776,
+                 "top": 726,
+                 "right": 826,
+                 "bottom": 776
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[11]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Ciruela claro",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 829,
+                 "top": 726,
+                 "right": 879,
+                 "bottom": 776
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[12]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Ciruela",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 882,
+                 "top": 726,
+                 "right": 932,
+                 "bottom": 776
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[13]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Orquídea claro",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 935,
+                 "top": 726,
+                 "right": 985,
+                 "bottom": 776
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[14]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Orquídea",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 988,
+                 "top": 726,
+                 "right": 1038,
+                 "bottom": 776
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[15]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Azul",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 1041,
+                 "top": 726,
+                 "right": 1091,
+                 "bottom": 776
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[16]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Azul marino",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 1094,
+                 "top": 726,
+                 "right": 1144,
+                 "bottom": 776
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[17]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Sombra morada",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 670,
+                 "top": 779,
+                 "right": 720,
+                 "bottom": 829
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[18]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Sombra morada oscura",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 723,
+                 "top": 779,
+                 "right": 773,
+                 "bottom": 829
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[19]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Iris pastel",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 776,
+                 "top": 779,
+                 "right": 826,
+                 "bottom": 829
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[20]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Iris manantial",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 829,
+                 "top": 779,
+                 "right": 879,
+                 "bottom": 829
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[21]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Luz roja violeta",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 882,
+                 "top": 779,
+                 "right": 932,
+                 "bottom": 829
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[22]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Rojo violeta",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 935,
+                 "top": 779,
+                 "right": 985,
+                 "bottom": 829
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[23]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Azul frío brillante",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 988,
+                 "top": 779,
+                 "right": 1038,
+                 "bottom": 829
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[24]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Azul frío",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 1041,
+                 "top": 779,
+                 "right": 1091,
+                 "bottom": 829
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[25]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Espuma de mar",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 1094,
+                 "top": 779,
+                 "right": 1144,
+                 "bottom": 829
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[26]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Verde azulado espuma de mar",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 670,
+                 "top": 832,
+                 "right": 720,
+                 "bottom": 882
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[27]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Menta claro",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 723,
+                 "top": 832,
+                 "right": 773,
+                 "bottom": 882
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[28]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Menta oscuro",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 776,
+                 "top": 832,
+                 "right": 826,
+                 "bottom": 882
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[29]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Verde césped",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 829,
+                 "top": 832,
+                 "right": 879,
+                 "bottom": 882
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[30]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Verde deportivo",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 882,
+                 "top": 832,
+                 "right": 932,
+                 "bottom": 882
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[31]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Gris",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 935,
+                 "top": 832,
+                 "right": 985,
+                 "bottom": 882
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[32]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Marrón gris",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 988,
+                 "top": 832,
+                 "right": 1038,
+                 "bottom": 882
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[33]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Azul acero",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 1041,
+                 "top": 832,
+                 "right": 1091,
+                 "bottom": 882
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[34]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Azul metalizado",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 1094,
+                 "top": 832,
+                 "right": 1144,
+                 "bottom": 882
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[35]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Musgo pálido",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 670,
+                 "top": 885,
+                 "right": 720,
+                 "bottom": 935
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[36]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Musgo",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 723,
+                 "top": 885,
+                 "right": 773,
+                 "bottom": 935
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[37]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Verde praderas",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 776,
+                 "top": 885,
+                 "right": 826,
+                 "bottom": 935
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[38]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Verde",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 829,
+                 "top": 885,
+                 "right": 879,
+                 "bottom": 935
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[39]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Cubierto",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 882,
+                 "top": 885,
+                 "right": 932,
+                 "bottom": 935
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[40]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Tormenta",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 935,
+                 "top": 885,
+                 "right": 985,
+                 "bottom": 935
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[41]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Gris azulado",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 988,
+                 "top": 885,
+                 "right": 1038,
+                 "bottom": 935
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[42]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Gris oscuro",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 1041,
+                 "top": 885,
+                 "right": 1091,
+                 "bottom": 935
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[43]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Verde liddy",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 1094,
+                 "top": 885,
+                 "right": 1144,
+                 "bottom": 935
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[44]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Salvia",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 670,
+                 "top": 938,
+                 "right": 720,
+                 "bottom": 988
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[45]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Camuflaje desierto",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 723,
+                 "top": 938,
+                 "right": 773,
+                 "bottom": 988
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[46]",
+                "children": []
+               },
+               {
+                "control_type": "ListItem",
+                "name": "Camuflaje",
+                "automation_id": "",
+                "class_name": "GridViewItem",
+                "rect": {
+                 "left": 776,
+                 "top": 938,
+                 "right": 826,
+                 "bottom": 988
+                },
+                "enabled": false,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/List[1]/ListItem[47]",
+                "children": []
+               }
+              ]
+             },
+             {
+              "control_type": "Text",
+              "name": "Colores personalizados",
+              "automation_id": "",
+              "class_name": "TextBlock",
+              "rect": {
+               "left": 670,
+               "top": 1027,
+               "right": 813,
+               "bottom": 1032
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "ScrollItem",
+               "Text"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/Text[3]",
+              "children": []
+             },
+             {
+              "control_type": "Button",
+              "name": "Ver colores",
+              "automation_id": "SystemSettings_Personalize_Color_CustomColors_Button",
+              "class_name": "Button",
+              "rect": {
+               "left": 1436,
+               "top": 1020,
+               "right": 1566,
+               "bottom": 1032
+              },
+              "enabled": false,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "Invoke",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/Button[1]",
+              "children": []
+             },
+             {
+              "control_type": "Text",
+              "name": "Mostrar color de énfasis en Inicio y en la barra de tareas",
+              "automation_id": "",
+              "class_name": "TextBlock",
+              "rect": null,
+              "enabled": true,
+              "offscreen": true,
+              "is_password": false,
+              "patterns": [
+               "ScrollItem",
+               "Text"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/Text[4]",
+              "children": []
+             },
+             {
+              "control_type": "StatusBar",
+              "name": "",
+              "automation_id": "",
+              "class_name": "Microsoft.UI.Xaml.Controls.InfoBar",
+              "rect": null,
+              "enabled": false,
+              "offscreen": true,
+              "is_password": false,
+              "patterns": [
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/StatusBar[0]",
+              "children": [
+               {
+                "control_type": "Text",
+                "name": "",
+                "automation_id": "Title",
+                "class_name": "TextBlock",
+                "rect": null,
+                "enabled": true,
+                "offscreen": true,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem",
+                 "Text"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/StatusBar[0]/Text[0]",
+                "children": []
+               },
+               {
+                "control_type": "Text",
+                "name": "Esta configuración solo está disponible en el modo oscuro de Windows.",
+                "automation_id": "Message",
+                "class_name": "TextBlock",
+                "rect": null,
+                "enabled": true,
+                "offscreen": true,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem",
+                 "Text"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/StatusBar[0]/Text[1]",
+                "children": []
+               }
+              ]
+             },
+             {
+              "control_type": "Button",
+              "name": "Mostrar color de énfasis en Inicio y en la barra de tareas",
+              "automation_id": "SystemSettings_Personalize_Color_ColorPrevalence_ToggleSwitch",
+              "class_name": "ToggleSwitch",
+              "rect": null,
+              "enabled": false,
+              "offscreen": true,
+              "is_password": false,
+              "patterns": [
+               "Toggle",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/Button[2]",
+              "children": []
+             },
+             {
+              "control_type": "Text",
+              "name": "Mostrar color de énfasis en barras de título y bordes de ventana",
+              "automation_id": "",
+              "class_name": "TextBlock",
+              "rect": null,
+              "enabled": true,
+              "offscreen": true,
+              "is_password": false,
+              "patterns": [
+               "ScrollItem",
+               "Text"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/Text[5]",
+              "children": []
+             },
+             {
+              "control_type": "Button",
+              "name": "Mostrar color de énfasis en barras de título y bordes de ventana",
+              "automation_id": "SystemSettings_Personalize_Color_ColorPrevalenceTitleBar_ToggleSwitch",
+              "class_name": "ToggleSwitch",
+              "rect": null,
+              "enabled": false,
+              "offscreen": true,
+              "is_password": false,
+              "patterns": [
+               "Toggle",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/Button[3]",
+              "children": []
+             }
+            ]
+           },
+           {
+            "control_type": "Group",
+            "name": "Configuración relacionada",
+            "automation_id": "",
+            "class_name": "NamedContainerAutomationPeer",
+            "rect": null,
+            "enabled": true,
+            "offscreen": true,
+            "is_password": false,
+            "patterns": [
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[2]",
+            "children": [
+             {
+              "control_type": "Text",
+              "name": "Configuración relacionada",
+              "automation_id": "",
+              "class_name": "TextBlock",
+              "rect": null,
+              "enabled": true,
+              "offscreen": true,
+              "is_password": false,
+              "patterns": [
+               "ScrollItem",
+               "Text"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[2]/Text[0]",
+              "children": []
+             },
+             {
+              "control_type": "Group",
+              "name": "Temas de contraste",
+              "automation_id": "SystemSettings_Personalize_Color_HighContrastLink_ButtonEntityItem",
+              "class_name": "NamedContainerAutomationPeer",
+              "rect": null,
+              "enabled": false,
+              "offscreen": true,
+              "is_password": false,
+              "patterns": [
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[2]/Group[0]",
+              "children": [
+               {
+                "control_type": "Text",
+                "name": "Temas de contraste",
+                "automation_id": "",
+                "class_name": "TextBlock",
+                "rect": null,
+                "enabled": true,
+                "offscreen": true,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem",
+                 "Text"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[2]/Group[0]/Text[0]",
+                "children": []
+               },
+               {
+                "control_type": "Text",
+                "name": "Temas de color para deficiencia visual, sensibilidad a la luz",
+                "automation_id": "",
+                "class_name": "TextBlock",
+                "rect": null,
+                "enabled": true,
+                "offscreen": true,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem",
+                 "Text"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[2]/Group[0]/Text[1]",
+                "children": []
+               },
+               {
+                "control_type": "Button",
+                "name": "Temas de contraste",
+                "automation_id": "EntityItemButton",
+                "class_name": "Button",
+                "rect": null,
+                "enabled": false,
+                "offscreen": true,
+                "is_password": false,
+                "patterns": [
+                 "Invoke",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[2]/Group[0]/Button[0]",
+                "children": []
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "control_type": "Group",
+            "name": "Soporte técnico relacionado",
+            "automation_id": "",
+            "class_name": "NamedContainerAutomationPeer",
+            "rect": null,
+            "enabled": true,
+            "offscreen": true,
+            "is_password": false,
+            "patterns": [
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[3]",
+            "children": [
+             {
+              "control_type": "Text",
+              "name": "Soporte técnico relacionado",
+              "automation_id": "",
+              "class_name": "TextBlock",
+              "rect": null,
+              "enabled": true,
+              "offscreen": true,
+              "is_password": false,
+              "patterns": [
+               "ScrollItem",
+               "Text"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[3]/Text[0]",
+              "children": []
+             },
+             {
+              "control_type": "Group",
+              "name": "Ayuda con colores",
+              "automation_id": "",
+              "class_name": "NamedContainerAutomationPeer",
+              "rect": null,
+              "enabled": true,
+              "offscreen": true,
+              "is_password": false,
+              "patterns": [
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[3]/Group[0]",
+              "children": [
+               {
+                "control_type": "Text",
+                "name": "Ayuda con colores",
+                "automation_id": "",
+                "class_name": "TextBlock",
+                "rect": null,
+                "enabled": true,
+                "offscreen": true,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem",
+                 "Text"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[3]/Group[0]/Text[0]",
+                "children": []
+               },
+               {
+                "control_type": "Button",
+                "name": "Mostrar más valores de configuración",
+                "automation_id": "EntityItemButton",
+                "class_name": "ExpanderToggleButton",
+                "rect": null,
+                "enabled": true,
+                "offscreen": true,
+                "is_password": false,
+                "patterns": [
+                 "ExpandCollapse",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[3]/Group[0]/Button[0]",
+                "children": []
+               },
+               {
+                "control_type": "Hyperlink",
+                "name": "Cambiar colores de escritorio o fondo",
+                "automation_id": "",
+                "class_name": "Hyperlink",
+                "rect": null,
+                "enabled": true,
+                "offscreen": true,
+                "is_password": false,
+                "patterns": [
+                 "Invoke",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[3]/Group[0]/Hyperlink[0]",
+                "children": [
+                 {
+                  "control_type": "Text",
+                  "name": "Cambiar colores de escritorio o fondo",
+                  "automation_id": "",
+                  "class_name": "TextBlock",
+                  "rect": null,
+                  "enabled": true,
+                  "offscreen": true,
+                  "is_password": false,
+                  "patterns": [
+                   "ScrollItem",
+                   "Text"
+                  ],
+                  "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[3]/Group[0]/Hyperlink[0]/Text[0]",
+                  "children": []
+                 }
+                ]
+               },
+               {
+                "control_type": "Hyperlink",
+                "name": "Resolver problemas de contraste alto",
+                "automation_id": "",
+                "class_name": "Hyperlink",
+                "rect": null,
+                "enabled": true,
+                "offscreen": true,
+                "is_password": false,
+                "patterns": [
+                 "Invoke",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[3]/Group[0]/Hyperlink[1]",
+                "children": [
+                 {
+                  "control_type": "Text",
+                  "name": "Resolver problemas de contraste alto",
+                  "automation_id": "",
+                  "class_name": "TextBlock",
+                  "rect": null,
+                  "enabled": true,
+                  "offscreen": true,
+                  "is_password": false,
+                  "patterns": [
+                   "ScrollItem",
+                   "Text"
+                  ],
+                  "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[3]/Group[0]/Hyperlink[1]/Text[0]",
+                  "children": []
+                 }
+                ]
+               },
+               {
+                "control_type": "Hyperlink",
+                "name": "Cambiar a un tema oscuro ahora.",
+                "automation_id": "",
+                "class_name": "Hyperlink",
+                "rect": null,
+                "enabled": true,
+                "offscreen": true,
+                "is_password": false,
+                "patterns": [
+                 "Invoke",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[3]/Group[0]/Hyperlink[2]",
+                "children": [
+                 {
+                  "control_type": "Text",
+                  "name": "Cambiar a un tema oscuro ahora.",
+                  "automation_id": "",
+                  "class_name": "TextBlock",
+                  "rect": null,
+                  "enabled": true,
+                  "offscreen": true,
+                  "is_password": false,
+                  "patterns": [
+                   "ScrollItem",
+                   "Text"
+                  ],
+                  "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[3]/Group[0]/Hyperlink[2]/Text[0]",
+                  "children": []
+                 }
+                ]
+               },
+               {
+                "control_type": "Hyperlink",
+                "name": "Cambiar el color de la barra de tareas",
+                "automation_id": "",
+                "class_name": "Hyperlink",
+                "rect": null,
+                "enabled": true,
+                "offscreen": true,
+                "is_password": false,
+                "patterns": [
+                 "Invoke",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[3]/Group[0]/Hyperlink[3]",
+                "children": [
+                 {
+                  "control_type": "Text",
+                  "name": "Cambiar el color de la barra de tareas",
+                  "automation_id": "",
+                  "class_name": "TextBlock",
+                  "rect": null,
+                  "enabled": true,
+                  "offscreen": true,
+                  "is_password": false,
+                  "patterns": [
+                   "ScrollItem",
+                   "Text"
+                  ],
+                  "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[3]/Group[0]/Hyperlink[3]/Text[0]",
+                  "children": []
+                 }
+                ]
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "control_type": "Group",
+            "name": "Obtener ayuda",
+            "automation_id": "BonusBarEntityContactSupportGroup",
+            "class_name": "GroupItem",
+            "rect": null,
+            "enabled": true,
+            "offscreen": true,
+            "is_password": false,
+            "patterns": [
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[4]",
+            "children": [
+             {
+              "control_type": "Hyperlink",
+              "name": "Obtener ayuda",
+              "automation_id": "",
+              "class_name": "Hyperlink",
+              "rect": null,
+              "enabled": true,
+              "offscreen": true,
+              "is_password": false,
+              "patterns": [
+               "Invoke",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[4]/Hyperlink[0]",
+              "children": [
+               {
+                "control_type": "Text",
+                "name": "Obtener ayuda",
+                "automation_id": "BonusBarContactSupportLink",
+                "class_name": "TextBlock",
+                "rect": null,
+                "enabled": true,
+                "offscreen": true,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem",
+                 "Text"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[4]/Hyperlink[0]/Text[0]",
+                "children": []
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "control_type": "ScrollBar",
+            "name": "Vertical",
+            "automation_id": "VerticalScrollBar",
+            "class_name": "ScrollBar",
+            "rect": null,
+            "enabled": true,
+            "offscreen": true,
+            "is_password": false,
+            "patterns": [
+             "RangeValue",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/ScrollBar[0]",
+            "children": []
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "control_type": "Pane",
+    "name": "",
+    "automation_id": "",
+    "class_name": "ApplicationFrameInputSinkWindow",
+    "rect": {
+     "left": 0,
+     "top": 32,
+     "right": 1920,
+     "bottom": 1032
+    },
+    "enabled": true,
+    "offscreen": false,
+    "is_password": false,
+    "patterns": [],
+    "path": "Window[0]/Pane[0]",
+    "children": []
+   }
+  ]
+ }
+}

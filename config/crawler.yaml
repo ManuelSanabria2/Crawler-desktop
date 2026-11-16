@@ -1,0 +1,197 @@
+# Crawler del escritorio de Windows: sondeo, privacidad, apps excluidas, rutas y Obsidian.
+#
+# Unidades: segundos (_s), píxeles (_px), días (_days) y megabytes (_mb), como sufijo de la clave.
+# Un valor TODO es un dato que Manuel todavía no ha dado (INSTRUCCIONES.md, sección 10).
+# El código que lo use debe fallar con un error claro.
+# Los valores marcados "provisional" son ajustes iniciales de software.
+#
+# No configurable a propósito (reglas de CLAUDE.md): el crawler pasivo nunca actúa, no se
+# registra el contenido de campos de contraseña ni el valor de los campos de texto.
+
+schema_version: 1
+
+system:
+  windows_edition: TODO        # home | pro | enterprise. Decide entre Windows Sandbox y máquina virtual.
+
+apps:
+  # Ejecutables que el crawler nunca lee ni registra. Se comparan sin distinguir mayúsculas.
+  # Lista acordada con Manuel el 2026-11-11: las categorías habituales. Los navegadores están
+  # incluidos porque el nombre de sus elementos puede contener texto de las páginas, y la banca
+  # se usa desde el navegador.
+  excluded:
+    # Gestores de contraseñas
+    - keepass.exe
+    - keepassxc.exe
+    - 1password.exe
+    - bitwarden.exe
+    - lastpass.exe
+    - dashlane.exe
+    - nordpass.exe
+    - protonpass.exe
+    - enpass.exe
+    # Seguridad y credenciales de Windows
+    - credentialuibroker.exe
+    - securityhealthhost.exe
+    # Correo y mensajería
+    - outlook.exe
+    - olk.exe
+    - hxoutlook.exe
+    - thunderbird.exe
+    - whatsapp.exe
+    - whatsapp.root.exe
+    - telegram.exe
+    - discord.exe
+    - signal.exe
+    - slack.exe
+    - ms-teams.exe
+    - teams.exe
+    # Navegadores
+    - chrome.exe
+    - msedge.exe
+    - firefox.exe
+    - brave.exe
+    - opera.exe
+    - opera_gx.exe
+    - vivaldi.exe
+  priority: TODO               # lista de ejecutables a mapear primero
+
+uia:
+  backend: uia                 # pywinauto con backend uia
+  tree_view: control           # control | raw. Vista del árbol: control omite nodos de relleno.
+  max_depth: 25                # provisional
+  max_nodes: 5000              # provisional
+  dump_timeout_s: 3.0          # provisional; al superarlo el volcado se marca como parcial
+  target_dump_time_s: 1.0      # meta de rendimiento (sección 6.2)
+
+signature:
+  # Reglas de normalización de las firmas de estado (sección 6.3). Todas son provisionales:
+  # salen de observar el Bloc de notas, la Calculadora y Configuración.
+
+  # Tipos que no cuentan para ninguna firma, junto con sus descendientes. Las barras de
+  # desplazamiento aparecen y desaparecen según el tamaño del contenido.
+  ignored_control_types: [ScrollBar, Thumb]
+
+  # Contenedores volátiles: se colapsan a tipo + rango de cantidad de hijos, sin mirar dentro.
+  # Tree y Table son añadidos a la sección 6.3.
+  volatile_container_types: [List, DataGrid, Document, Tree, Table]
+
+  # Contenedores que se descartan si quedan sin hijos después de aplicar las reglas anteriores.
+  prune_empty_control_types: [Pane, Group]
+
+  # Límites inferiores de los rangos de cantidad: 0, 1 a 4, 5 a 19, 20 a 99 y 100 o más.
+  count_buckets: [0, 1, 5, 20, 100]
+
+  # Texto variable dentro de los nombres. Se aplican en orden, sobre el nombre en minúsculas.
+  variable_text_patterns:
+    - { name: date, pattern: '\b\d{1,4}[-/.]\d{1,2}[-/.]\d{1,4}\b', replacement: '<fecha>' }
+    - { name: time, pattern: '\b\d{1,2}:\d{2}(?::\d{2})?\b', replacement: '<hora>' }
+    - { name: number, pattern: '\d+(?:[.,]\d+)*', replacement: '<n>' }
+
+  # Parte estable del título de la ventana: expresión regular con el grupo "stable".
+  # title_patterns es por ejecutable (en minúsculas); si no hay entrada se usa la de por defecto,
+  # que se queda con lo que va después del último " - " o ": " (el nombre de la app).
+  title_patterns: {}
+  default_title_pattern: '^(?:.*(?:\s[-\u2013\u2014]\s|:\s))?(?P<stable>.+?)\s*$'
+
+  target_repeatability: 0.95   # la misma vista da la misma firma estructural
+
+store:
+  db_path: data/crawler/geass_crawler.sqlite
+  screens_dir: data/crawler/screens
+  # Provisional: apagado. Una captura guarda como imagen el texto de los campos, así que solo
+  # se activa cuando Manuel lo decida. Las capturas nunca salen de data/.
+  capture_screens: false
+  phash_max_distance: 4        # provisional; distancia de hash perceptual para deduplicar
+  # Tipos de control que se tapan con un rectángulo negro en cada captura, para no guardar el
+  # valor de los campos de texto. Los campos de contraseña se tapan siempre.
+  redact_control_types: [Edit, Document]
+  retention:
+    max_age_days: 90           # provisional
+    max_total_mb: 2000         # provisional
+
+passive:
+  poll_interval_s: 0.5         # provisional; sondeo de la ventana en primer plano
+  use_uia_events: true
+  listen_mouse: true           # pynput: solo escucha, nunca mueve ni pulsa
+  stability_window_s: 0.4      # árbol estable si no cambia durante este tiempo
+  stability_timeout_s: 5.0     # provisional
+  stability_poll_s: 0.1        # provisional; pausa entre volcados mientras se espera la estabilidad
+  # Sin clics ni cambio de ventana, el árbol se vuelve a volcar cada resync_interval_s si hubo
+  # actividad de teclado o mouse desde el último volcado. Sin actividad, la espera se duplica
+  # cada vez hasta resync_max_interval_s. Ambos provisionales: salen del presupuesto de CPU.
+  resync_interval_s: 2.0
+  resync_max_interval_s: 30.0
+  # Provisional. Si entre el clic y la lectura del elemento bajo el cursor pasa más que esto,
+  # el elemento se descarta: la interfaz pudo haber cambiado ya.
+  max_capture_delay_s: 0.15
+  capture_shortcuts: false     # atajos de teclado; nunca teclas sueltas
+  pause_hotkey: ctrl+alt+p     # provisional; atajo global de pausa y reanudación
+  cpu_budget_fraction: 0.05    # promedio menor al 5 % en el PC de desarrollo
+  status_path: data/crawler/passive_status.json   # estado y contadores del proceso en marcha
+  status_interval_s: 5.0       # provisional; cada cuánto se reescribe status_path
+
+graph:
+  fuzzy_match_threshold: 80    # provisional; puntaje mínimo de rapidfuzz (0 a 100)
+  # Provisional. Coste de una transición por clic de coordenadas al buscar rutas; las demás
+  # acciones cuestan 1. Mayor que 1 para preferir las acciones por patrón de UI Automation.
+  coordinate_click_cost: 3.0
+
+export:
+  # Notas para Obsidian (sección 6.7).
+  # Dada por Manuel el 2026-11-14. Está dentro de OneDrive: las notas se sincronizan con la nube.
+  obsidian_vault_path: 'C:\Users\manue\OneDrive\Documentos\memoria crawler\Crawler-Geass'
+  notes_folder: GEASS/Apps     # provisional; carpeta dentro de la bóveda
+  managed_block_start: "<!-- GEASS:BEGIN -->"
+  managed_block_end: "<!-- GEASS:END -->"
+  top_actions_per_app: 20      # provisional
+  top_routes_per_app: 20       # provisional
+
+launcher:
+  start_menu_dirs:
+    - "%ProgramData%/Microsoft/Windows/Start Menu/Programs"
+    - "%AppData%/Microsoft/Windows/Start Menu/Programs"
+  include_store_apps: true     # salida de Get-StartApps en PowerShell
+  fuzzy_match_threshold: 80    # provisional
+  direct_actions: [open_explorer, media_play_pause, media_next, media_previous, volume_up, volume_down, volume_mute]
+  cache_path: data/crawler/app_index.json   # provisional; caché del índice de apps
+  cache_max_age_s: 86400.0     # provisional; edad máxima de la caché antes de reconstruirla
+  start_apps_timeout_s: 20.0   # provisional; tiempo máximo de Get-StartApps
+  ambiguity_margin: 5          # provisional; si la segunda coincidencia queda a menos de esto, es ambiguo
+  max_options: 5               # provisional; opciones que se muestran si hay ambigüedad o no hay coincidencia
+
+executor:
+  # Orden de resolución de una acción (sección 6.9).
+  resolution_order: [direct_action, current_window_element, graph_route, visual_detector, coordinate_click]
+  verify_transition: true
+  verify_timeout_s: 3.0        # provisional
+  verify_poll_s: 0.2           # provisional; pausa entre comprobaciones mientras se espera la verificación
+  launch_timeout_s: 15.0       # provisional; tiempo máximo para ver aparecer la ventana de una app lanzada
+  max_retries: 1               # se reintenta una vez y luego se reporta el fallo
+  benchmark_path: tests/benchmarks/crawler_tasks.yaml
+  targets:
+    direct_action_success: 0.95
+    navigation_success: 0.80
+
+active:
+  # Solo corre dentro de Windows Sandbox o de una máquina virtual (sección 6.10).
+  environment: TODO            # sandbox | vm. Depende de system.windows_edition.
+  wsb_path: sandbox/geass.wsb
+  output_dir: data/crawler/active
+  max_depth: 4                 # provisional
+  max_actions_per_app: 200     # provisional
+  max_time_per_app_s: 600      # provisional
+  seed: 20261110
+
+vision:
+  # Dataset visual y detector (sección 6.11).
+  dataset_dir: data/crawler/vision
+  format: coco
+  min_area_px: 256             # provisional; área mínima del elemento
+  classes: [button, text_field, checkbox, menu_item, tab, link, icon_other]
+  split_by_app: true
+  test_apps: TODO              # lista de ejecutables reservados para prueba; no aparecen en entrenamiento
+  detector: ssdlite320_mobilenet_v3_large   # torchvision; alternativa: fasterrcnn_mobilenet_v3_large_fpn
+  score_threshold: 0.5         # provisional
+  target_map50: 0.6            # meta orientativa en apps no vistas
+  model_dir: models/ui_detector
+  seed: 20261110

@@ -1,0 +1,206 @@
+# ============================================================================
+# VALORES FICTICIOS. SOLO PARA TESTS.
+#
+# Este archivo NO describe el brazo real de Manuel. Todas las dimensiones, rangos,
+# pines y calibraciones son inventados para poder probar el código sin hardware.
+# Nunca se usa para mover el brazo físico ni para generar el firmware.
+# La configuración real es config/arm.yaml.
+# ============================================================================
+#
+# Misma estructura y unidades que arm.yaml (SI: metros, radianes, segundos).
+# Geometría ficticia: un 6R con muñeca esférica de proporciones redondas.
+
+schema_version: 1
+fictitious: true
+
+arm:
+  name: geass-arm-FICTICIO
+  dof: 6
+
+kinematics:
+  convention: dh_standard
+  joints:
+    - name: j1_base
+      dh: { a_m: 0.0, alpha_rad: 1.5707963267948966, d_m: 0.10, theta_offset_rad: 0.0 }
+      limits: { min_rad: -2.9, max_rad: 2.9 }
+      max_velocity_rad_s: 1.0
+      max_acceleration_rad_s2: 2.0
+    - name: j2_shoulder
+      dh: { a_m: 0.20, alpha_rad: 0.0, d_m: 0.0, theta_offset_rad: 0.0 }
+      limits: { min_rad: -0.5, max_rad: 2.6 }
+      max_velocity_rad_s: 1.0
+      max_acceleration_rad_s2: 2.0
+    - name: j3_elbow
+      dh: { a_m: 0.0, alpha_rad: 1.5707963267948966, d_m: 0.0, theta_offset_rad: 0.0 }
+      limits: { min_rad: -1.5, max_rad: 1.5 }
+      max_velocity_rad_s: 1.0
+      max_acceleration_rad_s2: 2.0
+    - name: j4_wrist_roll
+      dh: { a_m: 0.0, alpha_rad: -1.5707963267948966, d_m: 0.20, theta_offset_rad: 0.0 }
+      limits: { min_rad: -1.5, max_rad: 1.5 }
+      max_velocity_rad_s: 2.0
+      max_acceleration_rad_s2: 4.0
+    - name: j5_wrist_pitch
+      dh: { a_m: 0.0, alpha_rad: 1.5707963267948966, d_m: 0.0, theta_offset_rad: 0.0 }
+      limits: { min_rad: -1.5, max_rad: 1.5 }
+      max_velocity_rad_s: 2.0
+      max_acceleration_rad_s2: 4.0
+    - name: j6_wrist_yaw
+      dh: { a_m: 0.0, alpha_rad: 0.0, d_m: 0.05, theta_offset_rad: 0.0 }
+      limits: { min_rad: -1.5, max_rad: 1.5 }
+      max_velocity_rad_s: 2.0
+      max_acceleration_rad_s2: 4.0
+  tool:
+    position_m: [0.0, 0.0, 0.08]
+    rpy_rad: [0.0, 0.0, 0.0]
+  ik:
+    branch:
+      shoulder: front
+      elbow: up
+      wrist: no_flip
+  poses:
+    home_rad: [0.0, 1.5707963267948966, 0.0, 0.0, 0.0, 0.0]
+    wait_rad: [0.0, 1.2, 0.6, 0.0, 1.0, 0.0]
+
+actuators:
+  joints:
+    - joint: j1_base
+      type: stepper
+      model: NEMA17
+    - joint: j2_shoulder
+      type: servo
+      model: FICTICIO
+      pca9685_channel: 0
+      pulse_min_us: 500
+      pulse_max_us: 2500
+      range_rad: 3.141592653589793
+      zero_offset_rad: 0.5
+      inverted: false
+    - joint: j3_elbow
+      type: servo
+      model: FICTICIO
+      pca9685_channel: 1
+      pulse_min_us: 500
+      pulse_max_us: 2500
+      range_rad: 3.141592653589793
+      zero_offset_rad: 1.5707963267948966
+      inverted: true
+    - joint: j4_wrist_roll
+      type: servo
+      model: FICTICIO
+      pca9685_channel: 2
+      pulse_min_us: 500
+      pulse_max_us: 2500
+      range_rad: 3.141592653589793
+      zero_offset_rad: 1.5707963267948966
+      inverted: false
+    - joint: j5_wrist_pitch
+      type: servo
+      model: FICTICIO
+      pca9685_channel: 3
+      pulse_min_us: 500
+      pulse_max_us: 2500
+      range_rad: 3.141592653589793
+      zero_offset_rad: 1.5707963267948966
+      inverted: false
+    - joint: j6_wrist_yaw
+      type: servo
+      model: FICTICIO
+      pca9685_channel: 4
+      pulse_min_us: 500
+      pulse_max_us: 2500
+      range_rad: 3.141592653589793
+      zero_offset_rad: 1.5707963267948966
+      inverted: true
+  base_stepper:
+    driver: FICTICIO
+    steps_per_rev: 200
+    microsteps: 8
+    gear_ratio: 4.0
+    inverted: false
+    limit_switch:
+      present: true
+      active_low: true
+      homing_velocity_rad_s: 0.2
+      home_angle_rad: 0.0
+  gripper:
+    fingers: 3
+    servo_count: 1
+    servo_model: FICTICIO
+    pca9685_channels: [5]
+    open_pulse_us: 1000
+    close_pulse_us: 1800
+    actuation_time_s: 0.5
+
+electronics:
+  pca9685:
+    i2c_address: 64
+    sda_pin: 1
+    scl_pin: 2
+    pwm_frequency_hz: 50
+  stepper_pins:
+    step_pin: 3
+    dir_pin: 4
+    enable_pin: 5
+    limit_switch_pin: 6
+
+bridge:
+  transport: mock
+  serial_port: PUERTO_FICTICIO
+  baudrate: 115200
+  watchdog_ms: 1000
+  ping_interval_ms: 250
+  ack_timeout_ms: 500
+  done_timeout_margin_s: 2.0
+  idempotent_retries: 2
+  seq_max_steps: 16
+
+sim:
+  timestep_s: 0.002
+  grasp_mode: friction
+  mesh_dir: hardware
+  use_meshes: false
+  render:
+    width_px: 320
+    height_px: 240
+
+neural_ik:
+  seed: 12345
+  dataset:
+    dir: data/arm/ik_test
+    format: parquet
+    num_samples: 2000
+    workspace_oversampling_fraction: 0.5
+    splits: { train: 0.8, val: 0.1, test: 0.1 }
+  model:
+    input_dim: 9
+    output_dim: 12
+    hidden_layers: [32, 32]
+    activation: silu
+  loss_weights:
+    sin_cos: 1.0
+    fk_position: 1.0
+    fk_orientation: 1.0
+  training:
+    device: cpu
+    batch_size: 256
+    learning_rate: 0.001
+    max_epochs: 2
+    early_stopping_patience: 1
+  targets:
+    position_median_m: 0.002
+    position_p95_m: 0.005
+    orientation_p95_rad: 0.05236
+  model_dir: models/neural_ik_test
+
+learned_calibration:
+  gripper_marker:
+    dictionary: DICT_4X4_50
+    id: 0
+    size_m: 0.02
+    offset_position_m: [0.0, 0.0, 0.03]
+    offset_rpy_rad: [0.0, 0.0, 0.0]
+  seed: 12345
+  data_dir: data/arm/calibration_test
+  model_dir: models/calibration_test
+  target_error_reduction: 0.5

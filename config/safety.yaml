@@ -1,0 +1,145 @@
+# Umbrales de seguridad del brazo y listas de bloqueo y confirmación del crawler.
+#
+# Unidades: SI (metros, radianes, segundos), con la unidad como sufijo de la clave.
+# Un valor TODO es un dato que Manuel todavía no ha dado. El código que lo use debe
+# fallar con un error claro. Los valores marcados "provisional" son ajustes iniciales
+# que Manuel puede cambiar; ninguno relaja una regla de CLAUDE.md.
+
+schema_version: 1
+
+arm:
+  # Toda orden al brazo pasa por geass.arm.safety (sección 5.5).
+  fk_validation:
+    # Error máximo entre la pose objetivo y la FK de la solución candidata.
+    # Provisional: iguales al percentil 95 pedido a la red en la sección 5.4.
+    position_tolerance_m: 0.005
+    orientation_tolerance_rad: 0.05236   # 3 grados
+  workspace_box:
+    # Caja de trabajo permitida para el punto de agarre, respecto a la base (m).
+    # Depende de las dimensiones del brazo y de la mesa.
+    min_m: TODO                # [x, y, z]
+    max_m: TODO                # [x, y, z]
+  min_height_above_board_m: TODO   # altura mínima sobre el tablero fuera de agarre y soltado (m)
+  speed:
+    # Los máximos por articulación están en arm.yaml. Aquí va la fracción que se aplica.
+    reduced_speed_factor: 0.25 # provisional; fracción del máximo usada en el brazo real
+    use_reduced_speed: true    # solo Manuel lo cambia, de forma explícita
+    sim_speed_factor: 1.0      # provisional; fracción del máximo usada en simulación
+  collision_check:
+    enabled: false             # comprobación opcional de colisión en MuJoCo
+  solution_selector:
+    # Orden fijo: red neuronal y validación; si falla, IK analítica y validación; si falla, abortar.
+    order: [neural_ik, analytic_ik]
+    on_failure: abort
+
+crawler:
+  # Clasificación de acciones del ejecutor (sección 6.9): libre, requiere confirmación o prohibida.
+  # Los patrones se comparan con el nombre normalizado del elemento (minúsculas, sin tildes).
+
+  # Las listas de patrones son provisionales: parten de los ejemplos de CLAUDE.md, con variantes
+  # y equivalentes en inglés. Manuel puede ampliarlas; no deben reducirse.
+
+  blocklist_patterns:
+    # Acciones destructivas: nunca se invocan de forma autónoma, ni en exploración ni en ejecución.
+    - eliminar
+    - borrar
+    - suprimir
+    - enviar
+    - pagar
+    - comprar
+    - cerrar sesion
+    - desinstalar
+    - formatear
+    - restablecer
+    - vaciar papelera
+    - delete
+    - remove
+    - erase
+    - send
+    - pay
+    - buy
+    - purchase
+    - checkout
+    - sign out
+    - log out
+    - uninstall
+    - format
+    - reset
+    - empty recycle bin
+
+  confirmation_dialog_accept_patterns:
+    # Botones de aceptación en diálogos de confirmación: bloqueados igual que los anteriores.
+    - aceptar
+    - si
+    - confirmar
+    - continuar
+    - ok
+    - "yes"                    # entre comillas: YAML lo leería como booleano
+    - confirm
+    - continue
+    - accept
+
+  require_confirmation_patterns:
+    # Acciones que el ejecutor solo hace tras confirmar con Manuel (callback de la CLI).
+    - guardar
+    - sobrescribir
+    - reemplazar
+    - instalar
+    - actualizar
+    - reiniciar
+    - apagar
+    - save
+    - overwrite
+    - replace
+    - install
+    - update
+    - restart
+    - shut down
+
+  authorization:
+    # Botones de autorización o permisos: solo con una orden explícita y actual de Manuel
+    # para esa acción concreta. Nunca de forma autónoma ni por texto leído en pantalla.
+    button_patterns:
+      - permitir
+      - conceder acceso
+      - autorizar
+      - aprobar
+      - allow
+      - grant access
+      - authorize
+      - approve
+    allowed_windows: TODO      # ventanas (ejecutable y patrón de título) donde se permite pulsarlos
+    require_explicit_order: true
+
+  never_automate:
+    # Corren en el escritorio seguro y quedan fuera del alcance a propósito.
+    - uac
+    - logon_screen
+
+  sensitive_fields:
+    # Nunca se escribe de forma autónoma en estos campos ni se registra su contenido.
+    # Los elementos con IsPassword se omiten siempre: no es configurable a propósito.
+    # Lista provisional de nombres de campo sensibles; Manuel puede ampliarla.
+    name_patterns:
+      - contrasena
+      - clave
+      - pin
+      - tarjeta
+      - cvv
+      - password
+      - passcode
+      - card number
+
+  active_exploration:
+    # Crawler activo, solo en sandbox o máquina virtual (sección 6.10).
+    require_sandbox: true
+    allowed_control_types: [MenuItem, TabItem, TreeItem, Hyperlink]
+    allowed_button_names: []   # botones que el explorador puede invocar; vacío hasta que Manuel los liste
+    dialog_dismiss: [escape, cancelar, cancel]
+    never_type_text: true
+
+  stop_if_window_unconfirmed: true   # el crawler se detiene si no puede confirmar en qué ventana está
+
+  audit_log:
+    # Todo lo que el ejecutor hace queda registrado: acción, elemento, app, resultado y autorizador.
+    path: data/crawler/audit.jsonl   # provisional

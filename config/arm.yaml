@@ -1,0 +1,223 @@
+# Configuración del brazo GEASS (versión v5).
+#
+# Unidades: SI (metros, radianes, segundos). La unidad va como sufijo de la clave
+# (_m, _rad, _s, _rad_s). Excepciones propias del borde con el ESP32, también con sufijo:
+# _ms (protocolo), _us (ancho de pulso de servo), _hz.
+#
+# Un valor TODO es un dato que Manuel todavía no ha dado (INSTRUCCIONES.md, sección 10).
+# El código que lo use debe fallar con un error claro. No se inventan datos físicos.
+# Los valores marcados "provisional" no son datos de hardware: son ajustes iniciales
+# de software que se pueden cambiar.
+
+schema_version: 1
+
+arm:
+  name: geass-arm-v5
+  dof: 6                       # 6 ejes con muñeca esférica (sección 4)
+
+kinematics:
+  convention: TODO             # dh_standard | dh_modified | otro equivalente usado al medir en Fusion
+  # Una entrada por articulación, de la base a la muñeca.
+  # dh: parámetros Denavit-Hartenberg del eslabón, tomados del modelo de Fusion.
+  #   a_m: longitud del eslabón (m). alpha_rad: torsión (rad). d_m: desplazamiento (m).
+  #   theta_offset_rad: offset del ángulo articular respecto al cero mecánico (rad).
+  # limits: rango articular (rad). max_velocity_rad_s y max_acceleration_rad_s2: máximos
+  #   que el actuador soporta en esa articulación (rad/s y rad/s^2).
+  joints:
+    - name: j1_base
+      dh: { a_m: TODO, alpha_rad: TODO, d_m: TODO, theta_offset_rad: TODO }
+      limits: { min_rad: TODO, max_rad: TODO }
+      max_velocity_rad_s: TODO
+      max_acceleration_rad_s2: TODO
+    - name: j2_shoulder
+      dh: { a_m: TODO, alpha_rad: TODO, d_m: TODO, theta_offset_rad: TODO }
+      limits: { min_rad: TODO, max_rad: TODO }
+      max_velocity_rad_s: TODO
+      max_acceleration_rad_s2: TODO
+    - name: j3_elbow
+      dh: { a_m: TODO, alpha_rad: TODO, d_m: TODO, theta_offset_rad: TODO }
+      limits: { min_rad: TODO, max_rad: TODO }
+      max_velocity_rad_s: TODO
+      max_acceleration_rad_s2: TODO
+    - name: j4_wrist_roll
+      dh: { a_m: TODO, alpha_rad: TODO, d_m: TODO, theta_offset_rad: TODO }
+      limits: { min_rad: TODO, max_rad: TODO }
+      max_velocity_rad_s: TODO
+      max_acceleration_rad_s2: TODO
+    - name: j5_wrist_pitch
+      dh: { a_m: TODO, alpha_rad: TODO, d_m: TODO, theta_offset_rad: TODO }
+      limits: { min_rad: TODO, max_rad: TODO }
+      max_velocity_rad_s: TODO
+      max_acceleration_rad_s2: TODO
+    - name: j6_wrist_yaw
+      dh: { a_m: TODO, alpha_rad: TODO, d_m: TODO, theta_offset_rad: TODO }
+      limits: { min_rad: TODO, max_rad: TODO }
+      max_velocity_rad_s: TODO
+      max_acceleration_rad_s2: TODO
+  tool:
+    # Transformación de la brida (último eslabón) al punto de agarre de la garra.
+    position_m: TODO           # [x, y, z] en metros
+    rpy_rad: TODO              # [roll, pitch, yaw] en radianes
+  ik:
+    # Rama de la IK analítica. Valores del ejemplo de la sección 5.1; provisional.
+    branch:
+      shoulder: front          # front | back
+      elbow: up                # up | down
+      wrist: no_flip           # no_flip | flip
+  poses:
+    home_rad: TODO             # 6 ángulos (rad): pose a la que lleva HOME
+    wait_rad: TODO             # 6 ángulos (rad): pose de espera entre jugadas (sección 5.6)
+
+actuators:
+  # Qué actuador mueve cada eje. Solo se sabe que la base usa el NEMA17 (sección 4).
+  # Para servos: type servo, model MG996 | MG90, canal del PCA9685 y calibración de pulso.
+  #   pulse_min_us y pulse_max_us: ancho de pulso (microsegundos) en los extremos del recorrido.
+  #   range_rad: recorrido total del servo entre esos dos pulsos (rad).
+  #   zero_offset_rad: ángulo del servo que corresponde al cero articular (rad).
+  #   inverted: true si el sentido del servo es contrario al de la articulación.
+  joints:
+    - joint: j1_base
+      type: stepper
+      model: NEMA17
+    - joint: j2_shoulder
+      type: servo
+      model: TODO
+      pca9685_channel: TODO
+      pulse_min_us: TODO
+      pulse_max_us: TODO
+      range_rad: TODO
+      zero_offset_rad: TODO
+      inverted: TODO
+    - joint: j3_elbow
+      type: servo
+      model: TODO
+      pca9685_channel: TODO
+      pulse_min_us: TODO
+      pulse_max_us: TODO
+      range_rad: TODO
+      zero_offset_rad: TODO
+      inverted: TODO
+    - joint: j4_wrist_roll
+      type: servo
+      model: TODO
+      pca9685_channel: TODO
+      pulse_min_us: TODO
+      pulse_max_us: TODO
+      range_rad: TODO
+      zero_offset_rad: TODO
+      inverted: TODO
+    - joint: j5_wrist_pitch
+      type: servo
+      model: TODO
+      pca9685_channel: TODO
+      pulse_min_us: TODO
+      pulse_max_us: TODO
+      range_rad: TODO
+      zero_offset_rad: TODO
+      inverted: TODO
+    - joint: j6_wrist_yaw
+      type: servo
+      model: TODO
+      pca9685_channel: TODO
+      pulse_min_us: TODO
+      pulse_max_us: TODO
+      range_rad: TODO
+      zero_offset_rad: TODO
+      inverted: TODO
+  base_stepper:
+    driver: TODO               # modelo del driver, por ejemplo TMC2209 o A4988
+    steps_per_rev: TODO        # pasos completos por vuelta del motor
+    microsteps: TODO           # micropasos configurados en el driver
+    gear_ratio: TODO           # vueltas del motor por vuelta de la base
+    inverted: TODO             # true si DIR alto gira en sentido negativo
+    limit_switch:
+      present: TODO            # true | false: si habrá final de carrera para el homing
+      active_low: TODO         # nivel lógico del final de carrera al activarse
+      homing_velocity_rad_s: TODO   # velocidad de la base durante el homing (rad/s)
+      home_angle_rad: TODO     # ángulo de la base en el final de carrera o en la marca física (rad)
+  gripper:
+    fingers: 3                 # garra de tres dedos (sección 4)
+    servo_count: TODO          # cuántos servos usa la garra
+    servo_model: TODO          # MG996 | MG90
+    pca9685_channels: TODO     # lista de canales del PCA9685
+    open_pulse_us: TODO        # ancho de pulso con la garra abierta (microsegundos)
+    close_pulse_us: TODO       # ancho de pulso con la garra cerrada sobre una pieza (microsegundos)
+    actuation_time_s: TODO     # tiempo que tarda en abrir o cerrar (s)
+
+electronics:
+  # Pines GPIO del ESP32.
+  pca9685:
+    i2c_address: TODO          # dirección I2C del PCA9685 (entero, por ejemplo 0x40)
+    sda_pin: TODO
+    scl_pin: TODO
+    pwm_frequency_hz: TODO     # frecuencia PWM de los servos (Hz)
+  stepper_pins:
+    step_pin: TODO
+    dir_pin: TODO
+    enable_pin: TODO
+    limit_switch_pin: TODO     # solo si limit_switch.present es true
+
+bridge:
+  # Protocolo PC y ESP32 (sección 5.7).
+  transport: serial            # serial | mock (ESP32 simulado). WiFi después.
+  serial_port: TODO            # puerto del ESP32 en este PC, por ejemplo COM5
+  baudrate: 115200
+  watchdog_ms: 1000            # sin PING ni comando en este tiempo, el ESP32 se detiene
+  ping_interval_ms: 250        # provisional; debe ser bastante menor que watchdog_ms
+  ack_timeout_ms: 500          # provisional
+  done_timeout_margin_s: 2.0   # provisional; margen sobre la duración t del comando
+  idempotent_retries: 2        # provisional; solo se reintentan PING y STATUS
+  seq_max_steps: 16            # provisional; máximo de pasos de un SEQ, limitado por el firmware
+
+sim:
+  # Simulación en MuJoCo (sección 5.2).
+  timestep_s: 0.002            # provisional
+  grasp_mode: friction         # friction | weld (restricción de soldadura). Documentar cuál se usa.
+  mesh_dir: hardware           # mallas exportadas de Fusion, opcionales
+  use_meshes: false            # false: geometrías simples generadas desde este archivo
+  render:
+    width_px: 640              # provisional
+    height_px: 480             # provisional
+
+neural_ik:
+  # Dataset, red y entrenamiento de la IK neuronal (secciones 5.3 y 5.4).
+  seed: 20261110
+  dataset:
+    dir: data/arm/ik
+    format: parquet
+    num_samples: 1000000
+    workspace_oversampling_fraction: 0.5   # provisional; fracción de muestras sobre tablero y cementerio
+    splits: { train: 0.8, val: 0.1, test: 0.1 }   # provisional
+  model:
+    input_dim: 9               # posición normalizada por el alcance + orientación 6D
+    output_dim: 12             # seno y coseno de cada articulación
+    hidden_layers: [256, 256, 256, 256]
+    activation: silu
+  loss_weights:                # provisional
+    sin_cos: 1.0
+    fk_position: 1.0
+    fk_orientation: 1.0
+  training:
+    device: cpu
+    batch_size: 4096           # provisional
+    learning_rate: 0.001       # provisional
+    max_epochs: 100            # provisional
+    early_stopping_patience: 10   # provisional
+  targets:                     # metas en la región de trabajo (sección 5.4)
+    position_median_m: 0.002
+    position_p95_m: 0.005
+    orientation_p95_rad: 0.05236   # 3 grados
+  model_dir: models/neural_ik
+
+learned_calibration:
+  # Calibración aprendida con un ArUco en la garra (sección 5.9).
+  gripper_marker:
+    dictionary: TODO           # diccionario ArUco del marcador impreso, por ejemplo DICT_4X4_50
+    id: TODO                   # id del marcador de la garra
+    size_m: TODO               # lado del marcador impreso (m)
+    offset_position_m: TODO    # [x, y, z] del marcador respecto al punto de agarre (m)
+    offset_rpy_rad: TODO       # orientación del marcador respecto a la garra (rad)
+  seed: 20261110
+  data_dir: data/arm/calibration
+  model_dir: models/calibration
+  target_error_reduction: 0.5  # reducir al menos a la mitad el error medio de colocación

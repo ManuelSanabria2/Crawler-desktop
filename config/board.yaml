@@ -1,0 +1,93 @@
+# Tablero, piezas, cementerio, cámara, percepción y Stockfish.
+#
+# Unidades: SI (metros, radianes, segundos), con la unidad como sufijo de la clave.
+# Un valor TODO es un dato que Manuel todavía no ha dado (INSTRUCCIONES.md, sección 10).
+# El código que lo use debe fallar con un error claro. No se inventan datos físicos.
+# Los valores marcados "provisional" son ajustes iniciales de software.
+#
+# Marco de referencia: el de la base del brazo (origen en el eje de la base, z hacia arriba).
+
+schema_version: 1
+
+board:
+  squares_per_side: 8
+  square_size_m: TODO          # lado de una casilla (m)
+  thickness_m: TODO            # grosor del tablero (m)
+  # Posición del centro del tablero respecto a la base del brazo, sobre la superficie de juego.
+  center_position_m: TODO      # [x, y, z] en metros
+  yaw_rad: TODO                # giro del tablero alrededor de z respecto a la base (rad)
+  robot_side: TODO             # white | black: color cuyas piezas quedan del lado del brazo
+
+pieces:
+  # Alto y diámetro máximo de cada tipo de pieza (m).
+  king:   { height_m: TODO, diameter_m: TODO }
+  queen:  { height_m: TODO, diameter_m: TODO }
+  rook:   { height_m: TODO, diameter_m: TODO }
+  bishop: { height_m: TODO, diameter_m: TODO }
+  knight: { height_m: TODO, diameter_m: TODO }
+  pawn:   { height_m: TODO, diameter_m: TODO }
+
+motion_heights:
+  # Alturas sobre la superficie del tablero (m). Dependen del alto de las piezas y de la garra.
+  approach_m: TODO             # altura de aproximación sobre la casilla antes de descender
+  safe_travel_m: TODO          # altura de traslado que libra la pieza más alta con margen
+  grasp_height_fraction: TODO  # fracción del alto de la pieza a la que cierra la garra (0 a 1)
+
+graveyard:
+  # Zona donde se dejan las piezas capturadas.
+  origin_position_m: TODO      # [x, y, z] de la primera posición, respecto a la base (m)
+  yaw_rad: TODO                # orientación de la cuadrícula del cementerio (rad)
+  rows: TODO                   # filas de la cuadrícula
+  cols: TODO                   # columnas de la cuadrícula (rows x cols debe ser al menos 30)
+  spacing_m: TODO              # separación entre posiciones (m)
+
+camera:
+  model: TODO                  # modelo de la cámara
+  device_index: TODO           # índice de la cámara en OpenCV en este PC
+  resolution_px: TODO          # [ancho, alto] en píxeles
+  fps: TODO                    # cuadros por segundo de la captura (1/s)
+  # Montaje: pose de la cámara respecto a la base del brazo.
+  mount_position_m: TODO       # [x, y, z] en metros
+  mount_rpy_rad: TODO          # [roll, pitch, yaw] en radianes
+  # Intrínsecos: salen de calibrar la cámara real con OpenCV.
+  intrinsics:
+    camera_matrix: TODO        # matriz 3x3 en píxeles
+    distortion_coeffs: TODO    # coeficientes de distorsión de OpenCV
+
+aruco:
+  # Cuatro marcadores en las esquinas del tablero (sección 5.10).
+  dictionary: TODO             # diccionario ArUco de los marcadores impresos, por ejemplo DICT_4X4_50
+  marker_size_m: TODO          # lado de cada marcador (m)
+  corner_ids:                  # id del marcador en cada esquina, visto desde el lado de las blancas
+    a1: TODO
+    h1: TODO
+    h8: TODO
+    a8: TODO
+  corner_offset_m: TODO        # distancia del centro de cada marcador a la esquina del tablero (m)
+
+perception:
+  seed: 20261110               # datos sintéticos, división de datos reales y entrenamiento
+  warped_size_px: 512          # provisional; lado de la vista cenital normalizada
+  square_crop_px: 64           # provisional; lado del recorte de cada casilla
+  classifier:
+    num_classes: 13            # vacía más 6 piezas por cada color
+    architectures: [small_cnn, mobilenet_v3_small]   # se comparan (sección 5.10)
+    model_dir: models/square_classifier
+  synthetic_data:
+    dir: data/arm/perception/synthetic
+    num_positions: 5000        # provisional
+    domain_randomization:      # qué se aleatoriza; los rangos se definen al implementar
+      lighting: true
+      textures: true
+      noise: true
+      camera_jitter: true
+  real_data:
+    dir: data/arm/perception/real
+  targets:
+    square_accuracy: 0.99      # exactitud por casilla en datos reales de prueba
+    move_detection_rate: 0.98  # jugada humana detectada correctamente
+
+stockfish:
+  executable_path: TODO        # ruta del ejecutable de Stockfish en este PC
+  skill_level: 5               # provisional; 0 a 20
+  move_time_s: 1.0             # provisional; tiempo por jugada

@@ -1,0 +1,2144 @@
+{
+ "handle": 591110,
+ "title": "Configuración",
+ "class_name": "ApplicationFrameWindow",
+ "process_id": 12460,
+ "process_name": "SystemSettings.exe",
+ "captured_at": "2026-11-11T07:21:23.704903Z",
+ "elapsed_s": 0.0858208999998169,
+ "node_count": 106,
+ "max_depth_reached": 8,
+ "partial": false,
+ "partial_reasons": [],
+ "error_count": 0,
+ "root": {
+  "control_type": "Window",
+  "name": "Configuración",
+  "automation_id": "",
+  "class_name": "ApplicationFrameWindow",
+  "rect": {
+   "left": -8,
+   "top": -8,
+   "right": 1928,
+   "bottom": 1040
+  },
+  "enabled": true,
+  "offscreen": false,
+  "is_password": false,
+  "patterns": [
+   "Window",
+   "Transform"
+  ],
+  "path": "Window[0]",
+  "children": [
+   {
+    "control_type": "Window",
+    "name": "Configuración",
+    "automation_id": "TitleBar",
+    "class_name": "ApplicationFrameTitleBarWindow",
+    "rect": {
+     "left": 1732,
+     "top": 0,
+     "right": 1920,
+     "bottom": 32
+    },
+    "enabled": true,
+    "offscreen": false,
+    "is_password": false,
+    "patterns": [
+     "Value"
+    ],
+    "path": "Window[0]/Window[0]",
+    "children": [
+     {
+      "control_type": "MenuBar",
+      "name": "Sistema",
+      "automation_id": "SystemMenuBar",
+      "class_name": "",
+      "rect": null,
+      "enabled": true,
+      "offscreen": false,
+      "is_password": false,
+      "patterns": [],
+      "path": "Window[0]/Window[0]/MenuBar[0]",
+      "children": [
+       {
+        "control_type": "MenuItem",
+        "name": "Sistema",
+        "automation_id": "",
+        "class_name": "",
+        "rect": null,
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "ExpandCollapse"
+        ],
+        "path": "Window[0]/Window[0]/MenuBar[0]/MenuItem[0]",
+        "children": []
+       }
+      ]
+     },
+     {
+      "control_type": "Button",
+      "name": "Minimizar Configuración",
+      "automation_id": "Minimize",
+      "class_name": "",
+      "rect": {
+       "left": 1782,
+       "top": 0,
+       "right": 1828,
+       "bottom": 32
+      },
+      "enabled": true,
+      "offscreen": false,
+      "is_password": false,
+      "patterns": [
+       "Invoke"
+      ],
+      "path": "Window[0]/Window[0]/Button[0]",
+      "children": []
+     },
+     {
+      "control_type": "Button",
+      "name": "Restaurar Configuración",
+      "automation_id": "Maximize",
+      "class_name": "",
+      "rect": {
+       "left": 1828,
+       "top": 0,
+       "right": 1874,
+       "bottom": 32
+      },
+      "enabled": true,
+      "offscreen": false,
+      "is_password": false,
+      "patterns": [
+       "Invoke"
+      ],
+      "path": "Window[0]/Window[0]/Button[1]",
+      "children": []
+     },
+     {
+      "control_type": "Button",
+      "name": "Cerrar Configuración",
+      "automation_id": "Close",
+      "class_name": "",
+      "rect": {
+       "left": 1874,
+       "top": 0,
+       "right": 1920,
+       "bottom": 32
+      },
+      "enabled": true,
+      "offscreen": false,
+      "is_password": false,
+      "patterns": [
+       "Invoke"
+      ],
+      "path": "Window[0]/Window[0]/Button[2]",
+      "children": []
+     }
+    ]
+   },
+   {
+    "control_type": "Window",
+    "name": "Configuración",
+    "automation_id": "",
+    "class_name": "Windows.UI.Core.CoreWindow",
+    "rect": {
+     "left": 0,
+     "top": 0,
+     "right": 1920,
+     "bottom": 1032
+    },
+    "enabled": true,
+    "offscreen": false,
+    "is_password": false,
+    "patterns": [],
+    "path": "Window[0]/Window[1]",
+    "children": [
+     {
+      "control_type": "Text",
+      "name": "Configuración",
+      "automation_id": "SettingsLabel",
+      "class_name": "TextBlock",
+      "rect": {
+       "left": 50,
+       "top": 16,
+       "right": 1732,
+       "bottom": 32
+      },
+      "enabled": true,
+      "offscreen": false,
+      "is_password": false,
+      "patterns": [
+       "ScrollItem",
+       "Text"
+      ],
+      "path": "Window[0]/Window[1]/Text[0]",
+      "children": []
+     },
+     {
+      "control_type": "Edit",
+      "name": "Cuadro de búsqueda, Buscar una opción",
+      "automation_id": "CommandSearchTextBox",
+      "class_name": "TextBox",
+      "rect": {
+       "left": 702,
+       "top": 8,
+       "right": 1218,
+       "bottom": 40
+      },
+      "enabled": true,
+      "offscreen": false,
+      "is_password": false,
+      "patterns": [
+       "Value",
+       "ScrollItem",
+       "Text"
+      ],
+      "path": "Window[0]/Window[1]/Edit[0]",
+      "children": []
+     },
+     {
+      "control_type": "Custom",
+      "name": "",
+      "automation_id": "PermanentNavigationView",
+      "class_name": "",
+      "rect": {
+       "left": 0,
+       "top": 0,
+       "right": 1920,
+       "bottom": 1032
+      },
+      "enabled": true,
+      "offscreen": false,
+      "is_password": false,
+      "patterns": [
+       "Selection",
+       "ScrollItem"
+      ],
+      "path": "Window[0]/Window[1]/Custom[0]",
+      "children": [
+       {
+        "control_type": "Button",
+        "name": "Atrás",
+        "automation_id": "NavigationViewBackButton",
+        "class_name": "Button",
+        "rect": {
+         "left": 4,
+         "top": 6,
+         "right": 44,
+         "bottom": 42
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "Invoke",
+         "ScrollItem"
+        ],
+        "path": "Window[0]/Window[1]/Custom[0]/Button[0]",
+        "children": []
+       },
+       {
+        "control_type": "Window",
+        "name": "",
+        "automation_id": "PaneRoot",
+        "class_name": "SplitViewPane",
+        "rect": {
+         "left": 0,
+         "top": 0,
+         "right": 300,
+         "bottom": 1032
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "ScrollItem"
+        ],
+        "path": "Window[0]/Window[1]/Custom[0]/Window[0]",
+        "children": [
+         {
+          "control_type": "Button",
+          "name": "REDACTADO REDACTADO",
+          "automation_id": "UserProfileControlButton",
+          "class_name": "Button",
+          "rect": {
+           "left": 5,
+           "top": 49,
+           "right": 295,
+           "bottom": 124
+          },
+          "enabled": true,
+          "offscreen": false,
+          "is_password": false,
+          "patterns": [
+           "Invoke",
+           "ScrollItem"
+          ],
+          "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Button[0]",
+          "children": [
+           {
+            "control_type": "Image",
+            "name": "Imagen de perfil del usuario",
+            "automation_id": "",
+            "class_name": "Image",
+            "rect": {
+             "left": 16,
+             "top": 57,
+             "right": 76,
+             "bottom": 117
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Button[0]/Image[0]",
+            "children": []
+           },
+           {
+            "control_type": "Text",
+            "name": "REDACTADO",
+            "automation_id": "UserName",
+            "class_name": "TextBlock",
+            "rect": {
+             "left": 88,
+             "top": 70,
+             "right": 288,
+             "bottom": 89
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "ScrollItem",
+             "Text"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Button[0]/Text[0]",
+            "children": []
+           },
+           {
+            "control_type": "Text",
+            "name": "REDACTADO",
+            "automation_id": "UserAccount",
+            "class_name": "TextBlock",
+            "rect": {
+             "left": 88,
+             "top": 89,
+             "right": 288,
+             "bottom": 105
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "ScrollItem",
+             "Text"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Button[0]/Text[1]",
+            "children": []
+           }
+          ]
+         },
+         {
+          "control_type": "Pane",
+          "name": "",
+          "automation_id": "MenuItemsScrollViewer",
+          "class_name": "ScrollViewer",
+          "rect": {
+           "left": 0,
+           "top": 141,
+           "right": 300,
+           "bottom": 1024
+          },
+          "enabled": true,
+          "offscreen": false,
+          "is_password": false,
+          "patterns": [
+           "Scroll",
+           "ScrollItem"
+          ],
+          "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]",
+          "children": [
+           {
+            "control_type": "Group",
+            "name": "",
+            "automation_id": "MenuItemsHost",
+            "class_name": "",
+            "rect": {
+             "left": 16,
+             "top": 143,
+             "right": 296,
+             "bottom": 619
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]",
+            "children": [
+             {
+              "control_type": "ListItem",
+              "name": "Inicio",
+              "automation_id": "",
+              "class_name": "Microsoft.UI.Xaml.Controls.NavigationViewItem",
+              "rect": {
+               "left": 16,
+               "top": 143,
+               "right": 296,
+               "bottom": 179
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "SelectionItem",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[0]",
+              "children": [
+               {
+                "control_type": "Image",
+                "name": "",
+                "automation_id": "",
+                "class_name": "Image",
+                "rect": {
+                 "left": 26,
+                 "top": 151,
+                 "right": 46,
+                 "bottom": 171
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[0]/Image[0]",
+                "children": []
+               }
+              ]
+             },
+             {
+              "control_type": "ListItem",
+              "name": "Sistema",
+              "automation_id": "",
+              "class_name": "Microsoft.UI.Xaml.Controls.NavigationViewItem",
+              "rect": {
+               "left": 16,
+               "top": 183,
+               "right": 296,
+               "bottom": 219
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "SelectionItem",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[1]",
+              "children": [
+               {
+                "control_type": "Image",
+                "name": "",
+                "automation_id": "",
+                "class_name": "Image",
+                "rect": {
+                 "left": 26,
+                 "top": 191,
+                 "right": 46,
+                 "bottom": 211
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[1]/Image[0]",
+                "children": []
+               }
+              ]
+             },
+             {
+              "control_type": "ListItem",
+              "name": "Bluetooth y dispositivos",
+              "automation_id": "",
+              "class_name": "Microsoft.UI.Xaml.Controls.NavigationViewItem",
+              "rect": {
+               "left": 16,
+               "top": 223,
+               "right": 296,
+               "bottom": 259
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "SelectionItem",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[2]",
+              "children": [
+               {
+                "control_type": "Image",
+                "name": "",
+                "automation_id": "",
+                "class_name": "Image",
+                "rect": {
+                 "left": 26,
+                 "top": 231,
+                 "right": 46,
+                 "bottom": 251
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[2]/Image[0]",
+                "children": []
+               }
+              ]
+             },
+             {
+              "control_type": "ListItem",
+              "name": "Red e Internet",
+              "automation_id": "",
+              "class_name": "Microsoft.UI.Xaml.Controls.NavigationViewItem",
+              "rect": {
+               "left": 16,
+               "top": 263,
+               "right": 296,
+               "bottom": 299
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "SelectionItem",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[3]",
+              "children": [
+               {
+                "control_type": "Image",
+                "name": "",
+                "automation_id": "",
+                "class_name": "Image",
+                "rect": {
+                 "left": 26,
+                 "top": 271,
+                 "right": 46,
+                 "bottom": 291
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[3]/Image[0]",
+                "children": []
+               }
+              ]
+             },
+             {
+              "control_type": "ListItem",
+              "name": "Personalización",
+              "automation_id": "",
+              "class_name": "Microsoft.UI.Xaml.Controls.NavigationViewItem",
+              "rect": {
+               "left": 16,
+               "top": 303,
+               "right": 296,
+               "bottom": 339
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "SelectionItem",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[4]",
+              "children": [
+               {
+                "control_type": "Image",
+                "name": "",
+                "automation_id": "",
+                "class_name": "Image",
+                "rect": {
+                 "left": 26,
+                 "top": 311,
+                 "right": 46,
+                 "bottom": 331
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[4]/Image[0]",
+                "children": []
+               }
+              ]
+             },
+             {
+              "control_type": "ListItem",
+              "name": "Aplicaciones",
+              "automation_id": "",
+              "class_name": "Microsoft.UI.Xaml.Controls.NavigationViewItem",
+              "rect": {
+               "left": 16,
+               "top": 343,
+               "right": 296,
+               "bottom": 379
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "SelectionItem",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[5]",
+              "children": [
+               {
+                "control_type": "Image",
+                "name": "",
+                "automation_id": "",
+                "class_name": "Image",
+                "rect": {
+                 "left": 26,
+                 "top": 351,
+                 "right": 46,
+                 "bottom": 371
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[5]/Image[0]",
+                "children": []
+               }
+              ]
+             },
+             {
+              "control_type": "ListItem",
+              "name": "Cuentas",
+              "automation_id": "",
+              "class_name": "Microsoft.UI.Xaml.Controls.NavigationViewItem",
+              "rect": {
+               "left": 16,
+               "top": 383,
+               "right": 296,
+               "bottom": 419
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "SelectionItem",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[6]",
+              "children": [
+               {
+                "control_type": "Image",
+                "name": "",
+                "automation_id": "",
+                "class_name": "Image",
+                "rect": {
+                 "left": 26,
+                 "top": 391,
+                 "right": 46,
+                 "bottom": 411
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[6]/Image[0]",
+                "children": []
+               }
+              ]
+             },
+             {
+              "control_type": "ListItem",
+              "name": "Hora e idioma",
+              "automation_id": "",
+              "class_name": "Microsoft.UI.Xaml.Controls.NavigationViewItem",
+              "rect": {
+               "left": 16,
+               "top": 423,
+               "right": 296,
+               "bottom": 459
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "SelectionItem",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[7]",
+              "children": [
+               {
+                "control_type": "Image",
+                "name": "",
+                "automation_id": "",
+                "class_name": "Image",
+                "rect": {
+                 "left": 26,
+                 "top": 431,
+                 "right": 46,
+                 "bottom": 451
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[7]/Image[0]",
+                "children": []
+               }
+              ]
+             },
+             {
+              "control_type": "ListItem",
+              "name": "Juegos",
+              "automation_id": "",
+              "class_name": "Microsoft.UI.Xaml.Controls.NavigationViewItem",
+              "rect": {
+               "left": 16,
+               "top": 463,
+               "right": 296,
+               "bottom": 499
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "SelectionItem",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[8]",
+              "children": [
+               {
+                "control_type": "Image",
+                "name": "",
+                "automation_id": "",
+                "class_name": "Image",
+                "rect": {
+                 "left": 26,
+                 "top": 471,
+                 "right": 46,
+                 "bottom": 491
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[8]/Image[0]",
+                "children": []
+               }
+              ]
+             },
+             {
+              "control_type": "ListItem",
+              "name": "Accesibilidad",
+              "automation_id": "",
+              "class_name": "Microsoft.UI.Xaml.Controls.NavigationViewItem",
+              "rect": {
+               "left": 16,
+               "top": 503,
+               "right": 296,
+               "bottom": 539
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "SelectionItem",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[9]",
+              "children": [
+               {
+                "control_type": "Image",
+                "name": "",
+                "automation_id": "",
+                "class_name": "Image",
+                "rect": {
+                 "left": 26,
+                 "top": 511,
+                 "right": 46,
+                 "bottom": 531
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[9]/Image[0]",
+                "children": []
+               }
+              ]
+             },
+             {
+              "control_type": "ListItem",
+              "name": "Privacidad y seguridad",
+              "automation_id": "",
+              "class_name": "Microsoft.UI.Xaml.Controls.NavigationViewItem",
+              "rect": {
+               "left": 16,
+               "top": 543,
+               "right": 296,
+               "bottom": 579
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "SelectionItem",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[10]",
+              "children": [
+               {
+                "control_type": "Image",
+                "name": "",
+                "automation_id": "",
+                "class_name": "Image",
+                "rect": {
+                 "left": 26,
+                 "top": 551,
+                 "right": 46,
+                 "bottom": 571
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[10]/Image[0]",
+                "children": []
+               }
+              ]
+             },
+             {
+              "control_type": "ListItem",
+              "name": "Windows Update",
+              "automation_id": "",
+              "class_name": "Microsoft.UI.Xaml.Controls.NavigationViewItem",
+              "rect": {
+               "left": 16,
+               "top": 583,
+               "right": 296,
+               "bottom": 619
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "SelectionItem",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[11]",
+              "children": [
+               {
+                "control_type": "Image",
+                "name": "",
+                "automation_id": "",
+                "class_name": "Image",
+                "rect": {
+                 "left": 26,
+                 "top": 591,
+                 "right": 46,
+                 "bottom": 611
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[11]/Image[0]",
+                "children": []
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "control_type": "Pane",
+          "name": "",
+          "automation_id": "FooterItemsScrollViewer",
+          "class_name": "ScrollViewer",
+          "rect": null,
+          "enabled": true,
+          "offscreen": true,
+          "is_password": false,
+          "patterns": [
+           "Scroll",
+           "ScrollItem"
+          ],
+          "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[1]",
+          "children": [
+           {
+            "control_type": "Group",
+            "name": "",
+            "automation_id": "FooterMenuItemsHost",
+            "class_name": "",
+            "rect": null,
+            "enabled": true,
+            "offscreen": true,
+            "is_password": false,
+            "patterns": [
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Window[0]/Pane[1]/Group[0]",
+            "children": []
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "control_type": "Group",
+        "name": "",
+        "automation_id": "PermanentNavigationViewBreadcrumbBar",
+        "class_name": "LandmarkTarget",
+        "rect": {
+         "left": 610,
+         "top": 51,
+         "right": 1044,
+         "bottom": 95
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "ScrollItem"
+        ],
+        "path": "Window[0]/Window[1]/Custom[0]/Group[0]",
+        "children": [
+         {
+          "control_type": "Button",
+          "name": "Bluetooth y dispositivos",
+          "automation_id": "",
+          "class_name": "Microsoft.UI.Xaml.Controls.BreadcrumbBarItem",
+          "rect": {
+           "left": 610,
+           "top": 51,
+           "right": 957,
+           "bottom": 95
+          },
+          "enabled": true,
+          "offscreen": false,
+          "is_password": false,
+          "patterns": [
+           "Invoke",
+           "ScrollItem"
+          ],
+          "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Button[0]",
+          "children": [
+           {
+            "control_type": "Text",
+            "name": "Bluetooth y dispositivos",
+            "automation_id": "",
+            "class_name": "TextBlock",
+            "rect": {
+             "left": 611,
+             "top": 54,
+             "right": 916,
+             "bottom": 92
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "ScrollItem",
+             "Text"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Button[0]/Text[0]",
+            "children": []
+           }
+          ]
+         },
+         {
+          "control_type": "Button",
+          "name": "Mouse",
+          "automation_id": "",
+          "class_name": "Microsoft.UI.Xaml.Controls.BreadcrumbBarItem",
+          "rect": {
+           "left": 958,
+           "top": 54,
+           "right": 1044,
+           "bottom": 92
+          },
+          "enabled": true,
+          "offscreen": false,
+          "is_password": false,
+          "patterns": [
+           "Invoke",
+           "ScrollItem"
+          ],
+          "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Button[1]",
+          "children": [
+           {
+            "control_type": "Text",
+            "name": "Mouse",
+            "automation_id": "",
+            "class_name": "TextBlock",
+            "rect": {
+             "left": 958,
+             "top": 54,
+             "right": 1044,
+             "bottom": 92
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "ScrollItem",
+             "Text"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Button[1]/Text[0]",
+            "children": []
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "control_type": "Group",
+        "name": "",
+        "automation_id": "",
+        "class_name": "LandmarkTarget",
+        "rect": {
+         "left": 326,
+         "top": 106,
+         "right": 1920,
+         "bottom": 1032
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "ScrollItem"
+        ],
+        "path": "Window[0]/Window[1]/Custom[0]/Group[1]",
+        "children": [
+         {
+          "control_type": "Pane",
+          "name": "",
+          "automation_id": "ItemsControlScrollViewer",
+          "class_name": "ScrollViewer",
+          "rect": {
+           "left": 326,
+           "top": 106,
+           "right": 1920,
+           "bottom": 1032
+          },
+          "enabled": true,
+          "offscreen": false,
+          "is_password": false,
+          "patterns": [
+           "Scroll",
+           "ScrollItem"
+          ],
+          "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]",
+          "children": [
+           {
+            "control_type": "Text",
+            "name": "Botón primario del mouse",
+            "automation_id": "",
+            "class_name": "TextBlock",
+            "rect": {
+             "left": 670,
+             "top": 136,
+             "right": 832,
+             "bottom": 155
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "ScrollItem",
+             "Text"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Text[0]",
+            "children": []
+           },
+           {
+            "control_type": "ComboBox",
+            "name": "Botón primario del mouse",
+            "automation_id": "SystemSettings_Input_Mouse_SetButtonConfiguration_ComboBox",
+            "class_name": "ComboBox",
+            "rect": {
+             "left": 1460,
+             "top": 126,
+             "right": 1598,
+             "bottom": 166
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "ExpandCollapse",
+             "Selection",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/ComboBox[0]",
+            "children": [
+             {
+              "control_type": "ListItem",
+              "name": "Izquierda",
+              "automation_id": "ContentPresenter",
+              "class_name": "ComboBoxItem",
+              "rect": {
+               "left": 1476,
+               "top": 136,
+               "right": 1556,
+               "bottom": 155
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "SelectionItem",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/ComboBox[0]/ListItem[0]",
+              "children": []
+             }
+            ]
+           },
+           {
+            "control_type": "Text",
+            "name": "Velocidad del puntero del mouse",
+            "automation_id": "",
+            "class_name": "TextBlock",
+            "rect": {
+             "left": 670,
+             "top": 208,
+             "right": 875,
+             "bottom": 227
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "ScrollItem",
+             "Text"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Text[1]",
+            "children": []
+           },
+           {
+            "control_type": "Slider",
+            "name": "Velocidad del puntero del mouse",
+            "automation_id": "SystemSettings_Input_Mouse_SetCursorSpeed_Slider",
+            "class_name": "Slider",
+            "rect": {
+             "left": 1326,
+             "top": 202,
+             "right": 1594,
+             "bottom": 234
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "Value",
+             "RangeValue",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Slider[0]",
+            "children": []
+           },
+           {
+            "control_type": "Text",
+            "name": "Mejorar la precisión del puntero",
+            "automation_id": "",
+            "class_name": "TextBlock",
+            "rect": {
+             "left": 670,
+             "top": 281,
+             "right": 869,
+             "bottom": 300
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "ScrollItem",
+             "Text"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Text[2]",
+            "children": []
+           },
+           {
+            "control_type": "Button",
+            "name": "Mejorar la precisión del puntero",
+            "automation_id": "SystemSettings_Input_Mouse_Acceleration_ToggleSwitch",
+            "class_name": "ToggleSwitch",
+            "rect": {
+             "left": 1466,
+             "top": 270,
+             "right": 1594,
+             "bottom": 310
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "Toggle",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Button[0]",
+            "children": []
+           },
+           {
+            "control_type": "Group",
+            "name": "Desplazamiento",
+            "automation_id": "",
+            "class_name": "NamedContainerAutomationPeer",
+            "rect": {
+             "left": 611,
+             "top": 357,
+             "right": 1611,
+             "bottom": 670
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[0]",
+            "children": [
+             {
+              "control_type": "Text",
+              "name": "Desplazamiento",
+              "automation_id": "",
+              "class_name": "TextBlock",
+              "rect": {
+               "left": 611,
+               "top": 357,
+               "right": 1611,
+               "bottom": 376
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "ScrollItem",
+               "Text"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[0]/Text[0]",
+              "children": []
+             },
+             {
+              "control_type": "Text",
+              "name": "Girar la rueda del mouse para desplazarse",
+              "automation_id": "",
+              "class_name": "TextBlock",
+              "rect": {
+               "left": 628,
+               "top": 409,
+               "right": 887,
+               "bottom": 428
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "ScrollItem",
+               "Text"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[0]/Text[1]",
+              "children": []
+             },
+             {
+              "control_type": "ComboBox",
+              "name": "Girar la rueda del mouse para desplazarse",
+              "automation_id": "SystemSettings_Input_Mouse_SetScrollPage_ComboBox",
+              "class_name": "ComboBox",
+              "rect": {
+               "left": 1407,
+               "top": 399,
+               "right": 1598,
+               "bottom": 439
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "ExpandCollapse",
+               "Selection",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[0]/ComboBox[0]",
+              "children": [
+               {
+                "control_type": "ListItem",
+                "name": "Varias líneas cada vez",
+                "automation_id": "ContentPresenter",
+                "class_name": "ComboBoxItem",
+                "rect": {
+                 "left": 1423,
+                 "top": 409,
+                 "right": 1556,
+                 "bottom": 428
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[0]/ComboBox[0]/ListItem[0]",
+                "children": []
+               }
+              ]
+             },
+             {
+              "control_type": "Text",
+              "name": "Líneas que desplazarse a la vez",
+              "automation_id": "",
+              "class_name": "TextBlock",
+              "rect": {
+               "left": 628,
+               "top": 481,
+               "right": 819,
+               "bottom": 500
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "ScrollItem",
+               "Text"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[0]/Text[2]",
+              "children": []
+             },
+             {
+              "control_type": "Slider",
+              "name": "Líneas que desplazarse a la vez",
+              "automation_id": "SystemSettings_Input_Mouse_SetScrollLines_Slider",
+              "class_name": "Slider",
+              "rect": {
+               "left": 1326,
+               "top": 475,
+               "right": 1594,
+               "bottom": 507
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "Value",
+               "RangeValue",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[0]/Slider[0]",
+              "children": []
+             },
+             {
+              "control_type": "Text",
+              "name": "Desplazarse por ventanas inactivas al mantener el puntero encima",
+              "automation_id": "",
+              "class_name": "TextBlock",
+              "rect": {
+               "left": 628,
+               "top": 554,
+               "right": 1035,
+               "bottom": 573
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "ScrollItem",
+               "Text"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[0]/Text[3]",
+              "children": []
+             },
+             {
+              "control_type": "Button",
+              "name": "Desplazarse por ventanas inactivas al mantener el puntero encima",
+              "automation_id": "SystemSettings_Input_Mouse_WheelRouting_ToggleSwitch",
+              "class_name": "ToggleSwitch",
+              "rect": {
+               "left": 1466,
+               "top": 543,
+               "right": 1594,
+               "bottom": 583
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "Toggle",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[0]/Button[0]",
+              "children": []
+             },
+             {
+              "control_type": "Text",
+              "name": "Dirección de desplazamiento",
+              "automation_id": "",
+              "class_name": "TextBlock",
+              "rect": {
+               "left": 628,
+               "top": 626,
+               "right": 807,
+               "bottom": 645
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "ScrollItem",
+               "Text"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[0]/Text[4]",
+              "children": []
+             },
+             {
+              "control_type": "ComboBox",
+              "name": "Dirección de desplazamiento",
+              "automation_id": "SystemSettings_Input_Mouse_ReverseWheelDirection_ComboBox",
+              "class_name": "ComboBox",
+              "rect": {
+               "left": 1295,
+               "top": 616,
+               "right": 1598,
+               "bottom": 656
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "ExpandCollapse",
+               "Selection",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[0]/ComboBox[1]",
+              "children": [
+               {
+                "control_type": "ListItem",
+                "name": "Mover hacia abajo desplaza hacia abajo",
+                "automation_id": "ContentPresenter",
+                "class_name": "ComboBoxItem",
+                "rect": {
+                 "left": 1311,
+                 "top": 626,
+                 "right": 1556,
+                 "bottom": 645
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "SelectionItem",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[0]/ComboBox[1]/ListItem[0]",
+                "children": []
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "control_type": "Group",
+            "name": "Configuración relacionada",
+            "automation_id": "",
+            "class_name": "NamedContainerAutomationPeer",
+            "rect": {
+             "left": 611,
+             "top": 702,
+             "right": 1611,
+             "bottom": 1014
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]",
+            "children": [
+             {
+              "control_type": "Text",
+              "name": "Configuración relacionada",
+              "automation_id": "",
+              "class_name": "TextBlock",
+              "rect": {
+               "left": 611,
+               "top": 702,
+               "right": 1611,
+               "bottom": 721
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "ScrollItem",
+               "Text"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/Text[0]",
+              "children": []
+             },
+             {
+              "control_type": "Group",
+              "name": "Puntero del mouse y entrada táctil",
+              "automation_id": "SystemSettings_Input_Mouse_EaseOfAccess_Link_ButtonEntityItem",
+              "class_name": "NamedContainerAutomationPeer",
+              "rect": {
+               "left": 611,
+               "top": 729,
+               "right": 1611,
+               "bottom": 798
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/Group[0]",
+              "children": [
+               {
+                "control_type": "Text",
+                "name": "Puntero del mouse y entrada táctil",
+                "automation_id": "",
+                "class_name": "TextBlock",
+                "rect": {
+                 "left": 628,
+                 "top": 746,
+                 "right": 841,
+                 "bottom": 765
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem",
+                 "Text"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/Group[0]/Text[0]",
+                "children": []
+               },
+               {
+                "control_type": "Text",
+                "name": "Tamaño y color del puntero",
+                "automation_id": "",
+                "class_name": "TextBlock",
+                "rect": {
+                 "left": 628,
+                 "top": 765,
+                 "right": 777,
+                 "bottom": 781
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem",
+                 "Text"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/Group[0]/Text[1]",
+                "children": []
+               },
+               {
+                "control_type": "Button",
+                "name": "Puntero del mouse y entrada táctil",
+                "automation_id": "EntityItemButton",
+                "class_name": "Button",
+                "rect": {
+                 "left": 1570,
+                 "top": 748,
+                 "right": 1602,
+                 "bottom": 780
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "Invoke",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/Group[0]/Button[0]",
+                "children": []
+               }
+              ]
+             },
+             {
+              "control_type": "Group",
+              "name": "Configuración de accesibilidad del mouse",
+              "automation_id": "SystemSettings_Accessibility_Mouse_MouseLink_ButtonEntityItem",
+              "class_name": "NamedContainerAutomationPeer",
+              "rect": {
+               "left": 611,
+               "top": 801,
+               "right": 1611,
+               "bottom": 870
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/Group[1]",
+              "children": [
+               {
+                "control_type": "Text",
+                "name": "Configuración de accesibilidad del mouse",
+                "automation_id": "",
+                "class_name": "TextBlock",
+                "rect": {
+                 "left": 628,
+                 "top": 818,
+                 "right": 885,
+                 "bottom": 837
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem",
+                 "Text"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/Group[1]/Text[0]",
+                "children": []
+               },
+               {
+                "control_type": "Text",
+                "name": "Hacer doble clic en la velocidad, ocultar mientras se escribe, hacer clic en bloquear",
+                "automation_id": "",
+                "class_name": "TextBlock",
+                "rect": {
+                 "left": 628,
+                 "top": 837,
+                 "right": 1075,
+                 "bottom": 853
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem",
+                 "Text"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/Group[1]/Text[1]",
+                "children": []
+               },
+               {
+                "control_type": "Button",
+                "name": "Configuración de accesibilidad del mouse",
+                "automation_id": "EntityItemButton",
+                "class_name": "Button",
+                "rect": {
+                 "left": 1570,
+                 "top": 820,
+                 "right": 1602,
+                 "bottom": 852
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "Invoke",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/Group[1]/Button[0]",
+                "children": []
+               }
+              ]
+             },
+             {
+              "control_type": "Group",
+              "name": "Configuración adicional del mouse",
+              "automation_id": "SystemSettings_Accessibility_MouseLinkLegacy_ButtonEntityItem",
+              "class_name": "NamedContainerAutomationPeer",
+              "rect": {
+               "left": 611,
+               "top": 873,
+               "right": 1611,
+               "bottom": 942
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/Group[2]",
+              "children": [
+               {
+                "control_type": "Text",
+                "name": "Configuración adicional del mouse",
+                "automation_id": "",
+                "class_name": "TextBlock",
+                "rect": {
+                 "left": 628,
+                 "top": 898,
+                 "right": 842,
+                 "bottom": 917
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem",
+                 "Text"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/Group[2]/Text[0]",
+                "children": []
+               },
+               {
+                "control_type": "Button",
+                "name": "Configuración adicional del mouse",
+                "automation_id": "EntityItemButton",
+                "class_name": "Button",
+                "rect": {
+                 "left": 1570,
+                 "top": 892,
+                 "right": 1602,
+                 "bottom": 924
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "Invoke",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/Group[2]/Button[0]",
+                "children": []
+               }
+              ]
+             },
+             {
+              "control_type": "Group",
+              "name": "Varias pantallas",
+              "automation_id": "SystemSettings_Input_Mouse_MultipleDisplays_Link_ButtonEntityItem",
+              "class_name": "NamedContainerAutomationPeer",
+              "rect": {
+               "left": 611,
+               "top": 945,
+               "right": 1611,
+               "bottom": 1014
+              },
+              "enabled": true,
+              "offscreen": false,
+              "is_password": false,
+              "patterns": [
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/Group[3]",
+              "children": [
+               {
+                "control_type": "Text",
+                "name": "Varias pantallas",
+                "automation_id": "",
+                "class_name": "TextBlock",
+                "rect": {
+                 "left": 628,
+                 "top": 962,
+                 "right": 723,
+                 "bottom": 981
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem",
+                 "Text"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/Group[3]/Text[0]",
+                "children": []
+               },
+               {
+                "control_type": "Text",
+                "name": "Cambiar la forma en que el cursor se mueve por encima de los límites de visualización",
+                "automation_id": "",
+                "class_name": "TextBlock",
+                "rect": {
+                 "left": 628,
+                 "top": 981,
+                 "right": 1094,
+                 "bottom": 997
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem",
+                 "Text"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/Group[3]/Text[1]",
+                "children": []
+               },
+               {
+                "control_type": "Button",
+                "name": "Varias pantallas",
+                "automation_id": "EntityItemButton",
+                "class_name": "Button",
+                "rect": {
+                 "left": 1570,
+                 "top": 964,
+                 "right": 1602,
+                 "bottom": 996
+                },
+                "enabled": true,
+                "offscreen": false,
+                "is_password": false,
+                "patterns": [
+                 "Invoke",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[1]/Group[3]/Button[0]",
+                "children": []
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "control_type": "Group",
+            "name": "Soporte técnico relacionado",
+            "automation_id": "",
+            "class_name": "NamedContainerAutomationPeer",
+            "rect": null,
+            "enabled": true,
+            "offscreen": true,
+            "is_password": false,
+            "patterns": [
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[2]",
+            "children": [
+             {
+              "control_type": "Text",
+              "name": "Soporte técnico relacionado",
+              "automation_id": "",
+              "class_name": "TextBlock",
+              "rect": null,
+              "enabled": true,
+              "offscreen": true,
+              "is_password": false,
+              "patterns": [
+               "ScrollItem",
+               "Text"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[2]/Text[0]",
+              "children": []
+             },
+             {
+              "control_type": "Group",
+              "name": "Ayuda con Mouse",
+              "automation_id": "",
+              "class_name": "NamedContainerAutomationPeer",
+              "rect": null,
+              "enabled": true,
+              "offscreen": true,
+              "is_password": false,
+              "patterns": [
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[2]/Group[0]",
+              "children": [
+               {
+                "control_type": "Text",
+                "name": "Ayuda con Mouse",
+                "automation_id": "",
+                "class_name": "TextBlock",
+                "rect": null,
+                "enabled": true,
+                "offscreen": true,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem",
+                 "Text"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[2]/Group[0]/Text[0]",
+                "children": []
+               },
+               {
+                "control_type": "Button",
+                "name": "Mostrar más valores de configuración",
+                "automation_id": "EntityItemButton",
+                "class_name": "ExpanderToggleButton",
+                "rect": null,
+                "enabled": true,
+                "offscreen": true,
+                "is_password": false,
+                "patterns": [
+                 "ExpandCollapse",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[2]/Group[0]/Button[0]",
+                "children": []
+               },
+               {
+                "control_type": "Hyperlink",
+                "name": "Cambiar el botón primario del mouse",
+                "automation_id": "",
+                "class_name": "Hyperlink",
+                "rect": null,
+                "enabled": true,
+                "offscreen": true,
+                "is_password": false,
+                "patterns": [
+                 "Invoke",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[2]/Group[0]/Hyperlink[0]",
+                "children": [
+                 {
+                  "control_type": "Text",
+                  "name": "Cambiar el botón primario del mouse",
+                  "automation_id": "",
+                  "class_name": "TextBlock",
+                  "rect": null,
+                  "enabled": true,
+                  "offscreen": true,
+                  "is_password": false,
+                  "patterns": [
+                   "ScrollItem",
+                   "Text"
+                  ],
+                  "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[2]/Group[0]/Hyperlink[0]/Text[0]",
+                  "children": []
+                 }
+                ]
+               },
+               {
+                "control_type": "Hyperlink",
+                "name": "Cambiar la configuración de desplazamiento del mouse",
+                "automation_id": "",
+                "class_name": "Hyperlink",
+                "rect": null,
+                "enabled": true,
+                "offscreen": true,
+                "is_password": false,
+                "patterns": [
+                 "Invoke",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[2]/Group[0]/Hyperlink[1]",
+                "children": [
+                 {
+                  "control_type": "Text",
+                  "name": "Cambiar la configuración de desplazamiento del mouse",
+                  "automation_id": "",
+                  "class_name": "TextBlock",
+                  "rect": null,
+                  "enabled": true,
+                  "offscreen": true,
+                  "is_password": false,
+                  "patterns": [
+                   "ScrollItem",
+                   "Text"
+                  ],
+                  "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[2]/Group[0]/Hyperlink[1]/Text[0]",
+                  "children": []
+                 }
+                ]
+               },
+               {
+                "control_type": "Hyperlink",
+                "name": "Ajustar la velocidad del puntero del mouse",
+                "automation_id": "",
+                "class_name": "Hyperlink",
+                "rect": null,
+                "enabled": true,
+                "offscreen": true,
+                "is_password": false,
+                "patterns": [
+                 "Invoke",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[2]/Group[0]/Hyperlink[2]",
+                "children": [
+                 {
+                  "control_type": "Text",
+                  "name": "Ajustar la velocidad del puntero del mouse",
+                  "automation_id": "",
+                  "class_name": "TextBlock",
+                  "rect": null,
+                  "enabled": true,
+                  "offscreen": true,
+                  "is_password": false,
+                  "patterns": [
+                   "ScrollItem",
+                   "Text"
+                  ],
+                  "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[2]/Group[0]/Hyperlink[2]/Text[0]",
+                  "children": []
+                 }
+                ]
+               },
+               {
+                "control_type": "Hyperlink",
+                "name": "Solución de problemas del mouse",
+                "automation_id": "",
+                "class_name": "Hyperlink",
+                "rect": null,
+                "enabled": true,
+                "offscreen": true,
+                "is_password": false,
+                "patterns": [
+                 "Invoke",
+                 "ScrollItem"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[2]/Group[0]/Hyperlink[3]",
+                "children": [
+                 {
+                  "control_type": "Text",
+                  "name": "Solución de problemas del mouse",
+                  "automation_id": "",
+                  "class_name": "TextBlock",
+                  "rect": null,
+                  "enabled": true,
+                  "offscreen": true,
+                  "is_password": false,
+                  "patterns": [
+                   "ScrollItem",
+                   "Text"
+                  ],
+                  "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[2]/Group[0]/Hyperlink[3]/Text[0]",
+                  "children": []
+                 }
+                ]
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "control_type": "Group",
+            "name": "Obtener ayuda",
+            "automation_id": "BonusBarEntityContactSupportGroup",
+            "class_name": "GroupItem",
+            "rect": null,
+            "enabled": true,
+            "offscreen": true,
+            "is_password": false,
+            "patterns": [
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[3]",
+            "children": [
+             {
+              "control_type": "Hyperlink",
+              "name": "Obtener ayuda",
+              "automation_id": "",
+              "class_name": "Hyperlink",
+              "rect": null,
+              "enabled": true,
+              "offscreen": true,
+              "is_password": false,
+              "patterns": [
+               "Invoke",
+               "ScrollItem"
+              ],
+              "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[3]/Hyperlink[0]",
+              "children": [
+               {
+                "control_type": "Text",
+                "name": "Obtener ayuda",
+                "automation_id": "BonusBarContactSupportLink",
+                "class_name": "TextBlock",
+                "rect": null,
+                "enabled": true,
+                "offscreen": true,
+                "is_password": false,
+                "patterns": [
+                 "ScrollItem",
+                 "Text"
+                ],
+                "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/Group[3]/Hyperlink[0]/Text[0]",
+                "children": []
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "control_type": "ScrollBar",
+            "name": "Vertical",
+            "automation_id": "VerticalScrollBar",
+            "class_name": "ScrollBar",
+            "rect": null,
+            "enabled": true,
+            "offscreen": true,
+            "is_password": false,
+            "patterns": [
+             "RangeValue",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[1]/Pane[0]/ScrollBar[0]",
+            "children": []
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "control_type": "Pane",
+    "name": "",
+    "automation_id": "",
+    "class_name": "ApplicationFrameInputSinkWindow",
+    "rect": {
+     "left": 0,
+     "top": 32,
+     "right": 1920,
+     "bottom": 1032
+    },
+    "enabled": true,
+    "offscreen": false,
+    "is_password": false,
+    "patterns": [],
+    "path": "Window[0]/Pane[0]",
+    "children": []
+   }
+  ]
+ }
+}

@@ -1,0 +1,1119 @@
+{
+ "handle": 1835954,
+ "title": "Calculadora",
+ "class_name": "ApplicationFrameWindow",
+ "process_id": 11900,
+ "process_name": "CalculatorApp.exe",
+ "captured_at": "2026-11-11T07:20:13.929447Z",
+ "elapsed_s": 0.04100610000023153,
+ "node_count": 54,
+ "max_depth_reached": 5,
+ "partial": false,
+ "partial_reasons": [],
+ "error_count": 0,
+ "root": {
+  "control_type": "Window",
+  "name": "Calculadora",
+  "automation_id": "",
+  "class_name": "ApplicationFrameWindow",
+  "rect": {
+   "left": 40,
+   "top": 32,
+   "right": 376,
+   "bottom": 573
+  },
+  "enabled": true,
+  "offscreen": false,
+  "is_password": false,
+  "patterns": [
+   "Window",
+   "Transform"
+  ],
+  "path": "Window[0]",
+  "children": [
+   {
+    "control_type": "Window",
+    "name": "Calculadora",
+    "automation_id": "TitleBar",
+    "class_name": "ApplicationFrameTitleBarWindow",
+    "rect": {
+     "left": 180,
+     "top": 33,
+     "right": 368,
+     "bottom": 65
+    },
+    "enabled": true,
+    "offscreen": false,
+    "is_password": false,
+    "patterns": [
+     "Value"
+    ],
+    "path": "Window[0]/Window[0]",
+    "children": [
+     {
+      "control_type": "MenuBar",
+      "name": "Sistema",
+      "automation_id": "SystemMenuBar",
+      "class_name": "",
+      "rect": null,
+      "enabled": true,
+      "offscreen": false,
+      "is_password": false,
+      "patterns": [],
+      "path": "Window[0]/Window[0]/MenuBar[0]",
+      "children": [
+       {
+        "control_type": "MenuItem",
+        "name": "Sistema",
+        "automation_id": "",
+        "class_name": "",
+        "rect": null,
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "ExpandCollapse"
+        ],
+        "path": "Window[0]/Window[0]/MenuBar[0]/MenuItem[0]",
+        "children": []
+       }
+      ]
+     },
+     {
+      "control_type": "Button",
+      "name": "Minimizar Calculadora",
+      "automation_id": "Minimize",
+      "class_name": "",
+      "rect": {
+       "left": 230,
+       "top": 33,
+       "right": 276,
+       "bottom": 65
+      },
+      "enabled": true,
+      "offscreen": false,
+      "is_password": false,
+      "patterns": [
+       "Invoke"
+      ],
+      "path": "Window[0]/Window[0]/Button[0]",
+      "children": []
+     },
+     {
+      "control_type": "Button",
+      "name": "Maximizar Calculadora",
+      "automation_id": "Maximize",
+      "class_name": "",
+      "rect": {
+       "left": 276,
+       "top": 33,
+       "right": 322,
+       "bottom": 65
+      },
+      "enabled": true,
+      "offscreen": false,
+      "is_password": false,
+      "patterns": [
+       "Invoke"
+      ],
+      "path": "Window[0]/Window[0]/Button[1]",
+      "children": []
+     },
+     {
+      "control_type": "Button",
+      "name": "Cerrar Calculadora",
+      "automation_id": "Close",
+      "class_name": "",
+      "rect": {
+       "left": 322,
+       "top": 33,
+       "right": 368,
+       "bottom": 65
+      },
+      "enabled": true,
+      "offscreen": false,
+      "is_password": false,
+      "patterns": [
+       "Invoke"
+      ],
+      "path": "Window[0]/Window[0]/Button[2]",
+      "children": []
+     }
+    ]
+   },
+   {
+    "control_type": "Window",
+    "name": "Calculadora",
+    "automation_id": "",
+    "class_name": "Windows.UI.Core.CoreWindow",
+    "rect": {
+     "left": 48,
+     "top": 33,
+     "right": 368,
+     "bottom": 565
+    },
+    "enabled": true,
+    "offscreen": false,
+    "is_password": false,
+    "patterns": [],
+    "path": "Window[0]/Window[1]",
+    "children": [
+     {
+      "control_type": "Text",
+      "name": "Calculadora",
+      "automation_id": "AppName",
+      "class_name": "TextBlock",
+      "rect": {
+       "left": 96,
+       "top": 41,
+       "right": 160,
+       "bottom": 57
+      },
+      "enabled": true,
+      "offscreen": false,
+      "is_password": false,
+      "patterns": [
+       "ScrollItem",
+       "Text"
+      ],
+      "path": "Window[0]/Window[1]/Text[0]",
+      "children": []
+     },
+     {
+      "control_type": "Custom",
+      "name": "",
+      "automation_id": "NavView",
+      "class_name": "",
+      "rect": {
+       "left": 48,
+       "top": 65,
+       "right": 368,
+       "bottom": 565
+      },
+      "enabled": true,
+      "offscreen": false,
+      "is_password": false,
+      "patterns": [
+       "Selection",
+       "ScrollItem"
+      ],
+      "path": "Window[0]/Window[1]/Custom[0]",
+      "children": [
+       {
+        "control_type": "Button",
+        "name": "Abrir navegación",
+        "automation_id": "TogglePaneButton",
+        "class_name": "Button",
+        "rect": {
+         "left": 52,
+         "top": 71,
+         "right": 92,
+         "bottom": 107
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "Invoke",
+         "ScrollItem"
+        ],
+        "path": "Window[0]/Window[1]/Custom[0]/Button[0]",
+        "children": [
+         {
+          "control_type": "Text",
+          "name": "",
+          "automation_id": "PaneTitleTextBlock",
+          "class_name": "TextBlock",
+          "rect": null,
+          "enabled": true,
+          "offscreen": true,
+          "is_password": false,
+          "patterns": [
+           "ScrollItem",
+           "Text"
+          ],
+          "path": "Window[0]/Window[1]/Custom[0]/Button[0]/Text[0]",
+          "children": []
+         }
+        ]
+       },
+       {
+        "control_type": "Group",
+        "name": "",
+        "automation_id": "",
+        "class_name": "LandmarkTarget",
+        "rect": {
+         "left": 48,
+         "top": 73,
+         "right": 368,
+         "bottom": 561
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "ScrollItem"
+        ],
+        "path": "Window[0]/Window[1]/Custom[0]/Group[0]",
+        "children": [
+         {
+          "control_type": "Text",
+          "name": "La expresión es ",
+          "automation_id": "CalculatorExpression",
+          "class_name": "",
+          "rect": null,
+          "enabled": true,
+          "offscreen": true,
+          "is_password": false,
+          "patterns": [
+           "ScrollItem"
+          ],
+          "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Text[0]",
+          "children": []
+         },
+         {
+          "control_type": "Text",
+          "name": "Se muestra 0",
+          "automation_id": "CalculatorResults",
+          "class_name": "",
+          "rect": {
+           "left": 48,
+           "top": 136,
+           "right": 368,
+           "bottom": 211
+          },
+          "enabled": true,
+          "offscreen": false,
+          "is_password": false,
+          "patterns": [
+           "Invoke",
+           "ScrollItem"
+          ],
+          "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Text[1]",
+          "children": []
+         },
+         {
+          "control_type": "Button",
+          "name": "Abrir control flotante de historial",
+          "automation_id": "HistoryButton",
+          "class_name": "Button",
+          "rect": {
+           "left": 328,
+           "top": 73,
+           "right": 360,
+           "bottom": 105
+          },
+          "enabled": true,
+          "offscreen": false,
+          "is_password": false,
+          "patterns": [
+           "Invoke",
+           "ScrollItem"
+          ],
+          "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Button[0]",
+          "children": []
+         },
+         {
+          "control_type": "Group",
+          "name": "Controles de la memoria",
+          "automation_id": "MemoryPanel",
+          "class_name": "NamedContainerAutomationPeer",
+          "rect": {
+           "left": 52,
+           "top": 212,
+           "right": 364,
+           "bottom": 243
+          },
+          "enabled": true,
+          "offscreen": false,
+          "is_password": false,
+          "patterns": [
+           "ScrollItem"
+          ],
+          "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[0]",
+          "children": [
+           {
+            "control_type": "Button",
+            "name": "Borrar toda la memoria",
+            "automation_id": "ClearMemoryButton",
+            "class_name": "Button",
+            "rect": {
+             "left": 52,
+             "top": 212,
+             "right": 102,
+             "bottom": 243
+            },
+            "enabled": false,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "Invoke",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[0]/Button[0]",
+            "children": []
+           },
+           {
+            "control_type": "Button",
+            "name": "Recuperar la memoria",
+            "automation_id": "MemRecall",
+            "class_name": "Button",
+            "rect": {
+             "left": 104,
+             "top": 212,
+             "right": 154,
+             "bottom": 243
+            },
+            "enabled": false,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "Invoke",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[0]/Button[1]",
+            "children": []
+           },
+           {
+            "control_type": "Button",
+            "name": "Sumar memoria",
+            "automation_id": "MemPlus",
+            "class_name": "Button",
+            "rect": {
+             "left": 156,
+             "top": 212,
+             "right": 206,
+             "bottom": 243
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "Invoke",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[0]/Button[2]",
+            "children": []
+           },
+           {
+            "control_type": "Button",
+            "name": "Restar la memoria",
+            "automation_id": "MemMinus",
+            "class_name": "Button",
+            "rect": {
+             "left": 208,
+             "top": 212,
+             "right": 258,
+             "bottom": 243
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "Invoke",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[0]/Button[3]",
+            "children": []
+           },
+           {
+            "control_type": "Button",
+            "name": "Almacén de la memoria",
+            "automation_id": "memButton",
+            "class_name": "Button",
+            "rect": {
+             "left": 260,
+             "top": 212,
+             "right": 311,
+             "bottom": 243
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "Invoke",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[0]/Button[4]",
+            "children": []
+           },
+           {
+            "control_type": "Button",
+            "name": "Abrir control flotante de la memoria",
+            "automation_id": "MemoryButton",
+            "class_name": "Button",
+            "rect": {
+             "left": 314,
+             "top": 212,
+             "right": 364,
+             "bottom": 243
+            },
+            "enabled": false,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "Invoke",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[0]/Button[5]",
+            "children": []
+           }
+          ]
+         },
+         {
+          "control_type": "Group",
+          "name": "Control de pantalla",
+          "automation_id": "DisplayControls",
+          "class_name": "NamedContainerAutomationPeer",
+          "rect": {
+           "left": 52,
+           "top": 245,
+           "right": 364,
+           "bottom": 296
+          },
+          "enabled": true,
+          "offscreen": false,
+          "is_password": false,
+          "patterns": [
+           "ScrollItem"
+          ],
+          "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[1]",
+          "children": [
+           {
+            "control_type": "Button",
+            "name": "Por ciento",
+            "automation_id": "percentButton",
+            "class_name": "Button",
+            "rect": {
+             "left": 52,
+             "top": 245,
+             "right": 129,
+             "bottom": 296
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "Invoke",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[1]/Button[0]",
+            "children": []
+           },
+           {
+            "control_type": "Button",
+            "name": "Quitar entrada",
+            "automation_id": "clearEntryButton",
+            "class_name": "Button",
+            "rect": {
+             "left": 131,
+             "top": 245,
+             "right": 207,
+             "bottom": 296
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "Invoke",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[1]/Button[1]",
+            "children": []
+           },
+           {
+            "control_type": "Button",
+            "name": "Borrar",
+            "automation_id": "clearButton",
+            "class_name": "Button",
+            "rect": {
+             "left": 209,
+             "top": 245,
+             "right": 286,
+             "bottom": 296
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "Invoke",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[1]/Button[2]",
+            "children": []
+           },
+           {
+            "control_type": "Button",
+            "name": "Retroceso",
+            "automation_id": "backSpaceButton",
+            "class_name": "Button",
+            "rect": {
+             "left": 288,
+             "top": 245,
+             "right": 364,
+             "bottom": 296
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "Invoke",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[1]/Button[3]",
+            "children": []
+           }
+          ]
+         },
+         {
+          "control_type": "Group",
+          "name": "Funciones estándar",
+          "automation_id": "StandardFunctions",
+          "class_name": "NamedContainerAutomationPeer",
+          "rect": {
+           "left": 52,
+           "top": 298,
+           "right": 286,
+           "bottom": 349
+          },
+          "enabled": true,
+          "offscreen": false,
+          "is_password": false,
+          "patterns": [
+           "ScrollItem"
+          ],
+          "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[2]",
+          "children": [
+           {
+            "control_type": "Button",
+            "name": "Recíproco",
+            "automation_id": "invertButton",
+            "class_name": "Button",
+            "rect": {
+             "left": 52,
+             "top": 298,
+             "right": 129,
+             "bottom": 349
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "Invoke",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[2]/Button[0]",
+            "children": []
+           },
+           {
+            "control_type": "Button",
+            "name": "Cuadrado",
+            "automation_id": "xpower2Button",
+            "class_name": "Button",
+            "rect": {
+             "left": 131,
+             "top": 298,
+             "right": 207,
+             "bottom": 349
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "Invoke",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[2]/Button[1]",
+            "children": []
+           },
+           {
+            "control_type": "Button",
+            "name": "Raíz cuadrada",
+            "automation_id": "squareRootButton",
+            "class_name": "Button",
+            "rect": {
+             "left": 209,
+             "top": 298,
+             "right": 286,
+             "bottom": 349
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "Invoke",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[2]/Button[2]",
+            "children": []
+           }
+          ]
+         },
+         {
+          "control_type": "Group",
+          "name": "Operadores estándar",
+          "automation_id": "StandardOperators",
+          "class_name": "NamedContainerAutomationPeer",
+          "rect": {
+           "left": 288,
+           "top": 298,
+           "right": 364,
+           "bottom": 561
+          },
+          "enabled": true,
+          "offscreen": false,
+          "is_password": false,
+          "patterns": [
+           "ScrollItem"
+          ],
+          "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[3]",
+          "children": [
+           {
+            "control_type": "Button",
+            "name": "Dividido por",
+            "automation_id": "divideButton",
+            "class_name": "Button",
+            "rect": {
+             "left": 288,
+             "top": 298,
+             "right": 364,
+             "bottom": 349
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "Invoke",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[3]/Button[0]",
+            "children": []
+           },
+           {
+            "control_type": "Button",
+            "name": "Multiplicar por",
+            "automation_id": "multiplyButton",
+            "class_name": "Button",
+            "rect": {
+             "left": 288,
+             "top": 351,
+             "right": 364,
+             "bottom": 402
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "Invoke",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[3]/Button[1]",
+            "children": []
+           },
+           {
+            "control_type": "Button",
+            "name": "Menos",
+            "automation_id": "minusButton",
+            "class_name": "Button",
+            "rect": {
+             "left": 288,
+             "top": 404,
+             "right": 364,
+             "bottom": 455
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "Invoke",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[3]/Button[2]",
+            "children": []
+           },
+           {
+            "control_type": "Button",
+            "name": "Más",
+            "automation_id": "plusButton",
+            "class_name": "Button",
+            "rect": {
+             "left": 288,
+             "top": 457,
+             "right": 364,
+             "bottom": 508
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "Invoke",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[3]/Button[3]",
+            "children": []
+           },
+           {
+            "control_type": "Button",
+            "name": "Es igual a",
+            "automation_id": "equalButton",
+            "class_name": "Button",
+            "rect": {
+             "left": 288,
+             "top": 510,
+             "right": 364,
+             "bottom": 561
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "Invoke",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[3]/Button[4]",
+            "children": []
+           }
+          ]
+         },
+         {
+          "control_type": "Group",
+          "name": "Teclado numérico",
+          "automation_id": "NumberPad",
+          "class_name": "NamedContainerAutomationPeer",
+          "rect": {
+           "left": 52,
+           "top": 351,
+           "right": 286,
+           "bottom": 561
+          },
+          "enabled": true,
+          "offscreen": false,
+          "is_password": false,
+          "patterns": [
+           "ScrollItem"
+          ],
+          "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[4]",
+          "children": [
+           {
+            "control_type": "Button",
+            "name": "Cero",
+            "automation_id": "num0Button",
+            "class_name": "Button",
+            "rect": {
+             "left": 131,
+             "top": 510,
+             "right": 208,
+             "bottom": 561
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "Invoke",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[4]/Button[0]",
+            "children": []
+           },
+           {
+            "control_type": "Button",
+            "name": "Uno",
+            "automation_id": "num1Button",
+            "class_name": "Button",
+            "rect": {
+             "left": 52,
+             "top": 457,
+             "right": 129,
+             "bottom": 508
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "Invoke",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[4]/Button[1]",
+            "children": []
+           },
+           {
+            "control_type": "Button",
+            "name": "Dos",
+            "automation_id": "num2Button",
+            "class_name": "Button",
+            "rect": {
+             "left": 131,
+             "top": 457,
+             "right": 208,
+             "bottom": 508
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "Invoke",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[4]/Button[2]",
+            "children": []
+           },
+           {
+            "control_type": "Button",
+            "name": "Tres",
+            "automation_id": "num3Button",
+            "class_name": "Button",
+            "rect": {
+             "left": 210,
+             "top": 457,
+             "right": 286,
+             "bottom": 508
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "Invoke",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[4]/Button[3]",
+            "children": []
+           },
+           {
+            "control_type": "Button",
+            "name": "Cuatro",
+            "automation_id": "num4Button",
+            "class_name": "Button",
+            "rect": {
+             "left": 52,
+             "top": 404,
+             "right": 129,
+             "bottom": 455
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "Invoke",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[4]/Button[4]",
+            "children": []
+           },
+           {
+            "control_type": "Button",
+            "name": "Cinco",
+            "automation_id": "num5Button",
+            "class_name": "Button",
+            "rect": {
+             "left": 131,
+             "top": 404,
+             "right": 208,
+             "bottom": 455
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "Invoke",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[4]/Button[5]",
+            "children": []
+           },
+           {
+            "control_type": "Button",
+            "name": "Seis",
+            "automation_id": "num6Button",
+            "class_name": "Button",
+            "rect": {
+             "left": 210,
+             "top": 404,
+             "right": 286,
+             "bottom": 455
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "Invoke",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[4]/Button[6]",
+            "children": []
+           },
+           {
+            "control_type": "Button",
+            "name": "Siete",
+            "automation_id": "num7Button",
+            "class_name": "Button",
+            "rect": {
+             "left": 52,
+             "top": 351,
+             "right": 129,
+             "bottom": 402
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "Invoke",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[4]/Button[7]",
+            "children": []
+           },
+           {
+            "control_type": "Button",
+            "name": "Ocho",
+            "automation_id": "num8Button",
+            "class_name": "Button",
+            "rect": {
+             "left": 131,
+             "top": 351,
+             "right": 208,
+             "bottom": 402
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "Invoke",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[4]/Button[8]",
+            "children": []
+           },
+           {
+            "control_type": "Button",
+            "name": "Nueve",
+            "automation_id": "num9Button",
+            "class_name": "Button",
+            "rect": {
+             "left": 210,
+             "top": 351,
+             "right": 286,
+             "bottom": 402
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "Invoke",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[4]/Button[9]",
+            "children": []
+           },
+           {
+            "control_type": "Button",
+            "name": "Separador decimal",
+            "automation_id": "decimalSeparatorButton",
+            "class_name": "Button",
+            "rect": {
+             "left": 210,
+             "top": 510,
+             "right": 286,
+             "bottom": 561
+            },
+            "enabled": true,
+            "offscreen": false,
+            "is_password": false,
+            "patterns": [
+             "Invoke",
+             "ScrollItem"
+            ],
+            "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Group[4]/Button[10]",
+            "children": []
+           }
+          ]
+         },
+         {
+          "control_type": "Button",
+          "name": "Positivo negativo",
+          "automation_id": "negateButton",
+          "class_name": "Button",
+          "rect": {
+           "left": 52,
+           "top": 510,
+           "right": 129,
+           "bottom": 561
+          },
+          "enabled": true,
+          "offscreen": false,
+          "is_password": false,
+          "patterns": [
+           "Invoke",
+           "ScrollItem"
+          ],
+          "path": "Window[0]/Window[1]/Custom[0]/Group[0]/Button[1]",
+          "children": []
+         }
+        ]
+       },
+       {
+        "control_type": "Text",
+        "name": "Modo de calculadora Estándar",
+        "automation_id": "Header",
+        "class_name": "TextBlock",
+        "rect": {
+         "left": 96,
+         "top": 74,
+         "right": 175,
+         "bottom": 101
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "ScrollItem",
+         "Text"
+        ],
+        "path": "Window[0]/Window[1]/Custom[0]/Text[0]",
+        "children": []
+       },
+       {
+        "control_type": "Button",
+        "name": "Mantener visible",
+        "automation_id": "NormalAlwaysOnTopButton",
+        "class_name": "Button",
+        "rect": {
+         "left": 185,
+         "top": 73,
+         "right": 217,
+         "bottom": 105
+        },
+        "enabled": true,
+        "offscreen": false,
+        "is_password": false,
+        "patterns": [
+         "Invoke",
+         "ScrollItem"
+        ],
+        "path": "Window[0]/Window[1]/Custom[0]/Button[1]",
+        "children": []
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "control_type": "Pane",
+    "name": "",
+    "automation_id": "",
+    "class_name": "ApplicationFrameInputSinkWindow",
+    "rect": {
+     "left": 48,
+     "top": 65,
+     "right": 368,
+     "bottom": 565
+    },
+    "enabled": true,
+    "offscreen": false,
+    "is_password": false,
+    "patterns": [],
+    "path": "Window[0]/Pane[0]",
+    "children": []
+   }
+  ]
+ }
+}

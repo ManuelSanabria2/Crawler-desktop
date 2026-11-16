@@ -1,0 +1,73 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "geass"
+version = "0.1.0"
+description = "GEASS: IA del brazo robótico de ajedrez y crawler del escritorio de Windows."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Manuel Jose Sanabria Gil" }]
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "pydantic>=2.5",
+    "pyyaml>=6.0",
+    "typer>=0.12",
+    "rich>=13.0",
+    "pandas>=2.1",
+    "pyarrow>=14.0",
+]
+
+[project.optional-dependencies]
+# Debe funcionar también en Linux (Colab). Stockfish es un ejecutable externo, no va aquí.
+arm = [
+    "torch>=2.2",
+    "mujoco>=3.1",
+    "opencv-contrib-python>=4.9",
+    "chess>=1.10",
+    "pyserial>=3.5",
+]
+# Solo funciona en Windows. Los paquetes exclusivos de Windows llevan marcador de plataforma
+# para que la instalación no falle en Linux.
+crawler = [
+    "pywinauto>=0.6.8; sys_platform == 'win32'",
+    "comtypes>=1.2; sys_platform == 'win32'",
+    "pywin32>=306; sys_platform == 'win32'",
+    "pynput>=1.7.6",
+    "mss>=9.0",
+    "pillow>=10.0",
+    "imagehash>=4.3",
+    "networkx>=3.2",
+    "rapidfuzz>=3.5",
+    "torchvision>=0.17",
+]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.5",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = ["--import-mode=importlib", "--strict-markers", "-ra"]
+markers = [
+    "hardware: necesita el brazo o el ESP32 conectados",
+    "windows_ui: necesita un escritorio de Windows real",
+    "slow: tarda más de 30 s",
+]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+src = ["src", "tests"]
+extend-exclude = ["firmware", "data", "models"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM", "N"]
+
+[tool.ruff.format]
+quote-style = "double"
